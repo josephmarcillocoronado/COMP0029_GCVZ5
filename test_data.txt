@@ -1,0 +1,28 @@
+Play Minecraft with my right hand.
+Play Minecraft with my left hand.
+Start Minecraft using my right hand to control the mouse.
+Start Minecraft using my left hand to control the mouse.
+Start Minecraft using an index pinch to right click the mouse.
+Start Minecraft using an index pinch to left click the mouse.
+I want to play pokemon and walk up when I make a fist.
+I want to play pokemon and walk down when I make a fist.
+I want to play pokemon and walk left when I make a fist.
+I want to play pokemon and walk right when I make a fist.
+I want to play pokemon and walk up when I make a fist with my right hand.
+I want to play pokemon and walk down when I make a fist with my right hand.
+I want to play pokemon and walk left when I make a fist with my right hand.
+I want to play pokemon and walk right when I make a fist with my right hand.
+I want to play pokemon and walk up when I make a fist with my left hand.
+I want to play pokemon and walk down when I make a fist with my left hand.
+I want to play pokemon and walk left when I make a fist with my left hand.
+I want to play pokemon and walk right when I make a fist with my left hand.
+I want to play tetris and rotate the piece when I make a fist.
+I want to play tetris and move the piece left when I make a fist.
+I want to play tetris and move the piece right when I make a fist.
+I want to play tetris and move the piece down when I make a fist.
+I want to play tetris and hold the piece when I make a fist.
+I want to play tetris and drop the piece when I make a fist.
+I want to play tetris and save the piece when I make a fist with my right hand.
+I want to play tetris and rotate the piece when I thwip with my right hand.
+I want to play tetris and move the piece left when I thwip with my left hand.
+I want to play tetris and move the piece right when I thwip with my left hand.

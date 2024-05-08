@@ -3,14 +3,14 @@ from spacy import displacy
 from spacy.training import Example
 from test_data import TEST_DATA
 
-def test_and_save_combined_visualization(model_path, test_data, output_html="combined_entities_and_dependencies.html"):
+def save_ner_visualization(model_path, test_data, output_html="ner_entities.html"):
     """
-    Load a trained spaCy model, run it on test data, and save a combined visualization file.
+    Load a trained spaCy model, run it on test data, and save a combined NER visualization file.
 
     Parameters:
         model_path (str): Path to the folder containing the trained model.
         test_data (list): List of tuples, where each tuple contains a text and expected entities.
-        output_html (str): Name of the output HTML file.
+        output_html (str): Name of the output HTML file for NER visualization.
     """
     # Load the trained model
     nlp = spacy.load(model_path)
@@ -21,22 +21,58 @@ def test_and_save_combined_visualization(model_path, test_data, output_html="com
     <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>NER and Dependency Visualization</title>
-        <style>/* Add some custom styles if desired */</style>
+        <title>NER Visualization</title>
     </head>
     <body>
-    <h1>Combined NER and Dependency Parsing Visualizations</h1>
+    <h1>NER Visualizations</h1>
     """
 
     for index, (text, _) in enumerate(test_data):
         doc = nlp(text)
 
-        # Render named entities and append to the combined HTML
+        # Render named entities and append to the NER HTML
         entity_html = displacy.render(doc, style="ent", jupyter=False)
         html_content += f"<h2>Entities for Test Sentence {index + 1}</h2>"
         html_content += entity_html
 
-        # Render dependency parsing and append to the combined HTML
+    # Close HTML structure
+    html_content += "</body></html>"
+
+    # Save the combined NER visualization to an HTML file
+    with open(output_html, "w") as file:
+        file.write(html_content)
+
+    print(f"NER visualization file '{output_html}' saved.")
+
+
+def save_dependency_visualization(model_path, test_data, output_html="dependency_parsing.html"):
+    """
+    Load a trained spaCy model, run it on test data, and save a combined dependency parsing visualization file.
+
+    Parameters:
+        model_path (str): Path to the folder containing the trained model.
+        test_data (list): List of tuples, where each tuple contains a text and expected entities.
+        output_html (str): Name of the output HTML file for dependency parsing visualization.
+    """
+    # Load the trained model
+    nlp = spacy.load(model_path)
+
+    # Initialize HTML structure
+    html_content = """
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Dependency Parsing Visualization</title>
+    </head>
+    <body>
+    <h1>Dependency Parsing Visualizations</h1>
+    """
+
+    for index, (text, _) in enumerate(test_data):
+        doc = nlp(text)
+
+        # Render dependency parsing and append to the dependency HTML
         dep_html = displacy.render(doc, style="dep", jupyter=False)
         html_content += f"<h2>Dependencies for Test Sentence {index + 1}</h2>"
         html_content += dep_html
@@ -44,12 +80,12 @@ def test_and_save_combined_visualization(model_path, test_data, output_html="com
     # Close HTML structure
     html_content += "</body></html>"
 
-    # Save the combined visualization to an HTML file
+    # Save the combined dependency parsing visualization to an HTML file
     with open(output_html, "w") as file:
         file.write(html_content)
 
-    print(f"Combined visualization file '{output_html}' saved.")
-from test_data import TEST_DATA
+    print(f"Dependency parsing visualization file '{output_html}' saved.")
+
 
 def evaluate_ner_model(model_path, test_data):
     """
@@ -85,6 +121,9 @@ if __name__ == "__main__":
     # Path to the folder containing the trained model
     model_directory = "nlp_model"  # Replace with your trained model's path
 
-    # Run the combined visualization function using the imported test data
-    test_and_save_combined_visualization(model_directory, TEST_DATA)
+    # Save separate visualizations for NER and dependency parsing
+    save_ner_visualization(model_directory, TEST_DATA)
+    save_dependency_visualization(model_directory, TEST_DATA)
+
+    # Evaluate the NER model
     evaluate_ner_model(model_directory, TEST_DATA)

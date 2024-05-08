@@ -1,7 +1,7 @@
 import spacy
 from spacy.training import Example
 import os
-from spacy_training_data import TRAIN_DATA
+from training_data import TRAIN_DATA
 def prepare_training_data():
     # Example training data (dummy)
     train_data = [
@@ -35,7 +35,7 @@ def train_ner_only(nlp, train_data, output_path):
     optimizer = nlp.resume_training()
 
     # Train the NER component only
-    for i in range(2000):  # Adjust the number of iterations as necessary
+    for i in range(500):  # Adjust the number of iterations as necessary
         losses = {}
         nlp.update(examples, drop=0.3, losses=losses, sgd=optimizer)
         print(f"Losses at iteration {i}: {losses}")

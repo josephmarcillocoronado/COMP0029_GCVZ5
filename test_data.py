@@ -1,21 +1,30 @@
 TEST_DATA = [
-    # Commands and modes
-    ("Play Minecraft with my right hand", {"entities": [(0, 4, "COMMAND"), (5, 14, "MODE"), (23, 28, "ORIENTATION"), (29, 33, "LANDMARK")]}),
-    ("Activate Mario using left click", {"entities": [(0, 8, "COMMAND"), (9, 14, "MODE"), (21, 31, "ACTION")]}),
-    ("Start Rocket League and jump up", {"entities": [(0, 5, "COMMAND"), (6, 19, "MODE"), (24, 31, "ACTION")]}),
-
-    # Actions and poses
-    ("Perform a three fingers pinch to open the door", {"entities": [(9, 24, "POSE"), (28, 39, "ACTION")]}),
-    ("Use the mouse while holding a left elbow", {"entities": [(8, 13, "POSE"), (25, 30, "ORIENTATION"), (31, 37, "LANDMARK")]}),
-    ("Rotate with your right wrist to point forward", {"entities": [(0, 6, "ACTION"), (17, 22, "ORIENTATION"), (23, 28, "LANDMARK")]}),
-
-    # Combining modes and landmarks
-    ("Switch to joystick mode with both hands", {"entities": [(0, 6, "COMMAND"), (10, 23, "MODE"), (29, 33, "LANDMARK")]}),
-    ("Play Rocket League in mouse mode", {"entities": [(0, 4, "COMMAND"), (5, 18, "MODE"), (22, 27, "POSE")]}),
-    ("Attach left click to my right wrist", {"entities": [(0, 6, "COMMAND"), (7, 17, "ACTION"), (24, 29, "ORIENTATION"), (30, 35, "LANDMARK")]}),
-
-    # Edge cases
-    ("", {"entities": []}),
-    ("Press the trigger button to shoot", {"entities": [(0, 5, "COMMAND"), (9, 24, "ACTION"), (28, 33, "ACTION")]}),
-    ("Pass the ball using left click", {"entities": [(0, 14, "ACTION"), (22, 32, "ACTION")]}),
+    ("Play Minecraft with my right hand.", {"entities": [[0, 4, "COMMAND"], [5, 14, "MODE"], [23, 28, "ORIENTATION"], [29, 33, "LANDMARK"]]}),
+    ("Play Minecraft with my left hand.", {"entities": [[0, 4, "COMMAND"], [5, 14, "MODE"], [23, 27, "ORIENTATION"], [28, 32, "LANDMARK"]]}),
+    ("Start Minecraft using my right hand to control the mouse.", {"entities": [[0, 5, "COMMAND"], [6, 15, "MODE"], [25, 30, "ORIENTATION"], [31, 35, "LANDMARK"], [39, 56, "ACTION"]]}),
+    ("Start Minecraft using my left hand to control the mouse.", {"entities": [[0, 5, "COMMAND"], [6, 15, "MODE"], [25, 29, "ORIENTATION"], [30, 34, "LANDMARK"], [38, 55, "ACTION"]]}),
+    ("Start Minecraft using an index pinch to right click the mouse.", {"entities": [[0, 5, "COMMAND"], [6, 15, "MODE"], [25, 36, "POSE"], [40, 61, "ACTION"]]}),
+    ("Start Minecraft using an index pinch to left click the mouse.", {"entities": [[0, 5, "COMMAND"], [6, 15, "MODE"], [25, 36, "POSE"], [40, 60, "ACTION"]]}),
+    ("I want to play pokemon and walk up when I make a fist.", {"entities": [[10, 14, "COMMAND"], [15, 22, "MODE"], [27, 34, "ACTION"], [49, 53, "POSE"]]}),
+    ("I want to play pokemon and walk down when I make a fist.", {"entities": [[10, 14, "COMMAND"], [15, 22, "MODE"], [27, 36, "ACTION"], [51, 55, "POSE"]]}),
+    ("I want to play pokemon and walk left when I make a fist.", {"entities": [[10, 14, "COMMAND"], [15, 22, "MODE"], [27, 36, "ACTION"], [51, 55, "POSE"]]}),
+    ("I want to play pokemon and walk right when I make a fist.", {"entities": [[10, 14, "COMMAND"], [15, 22, "MODE"], [27, 37, "ACTION"], [52, 56, "POSE"]]}),
+    ("I want to play pokemon and walk up when I make a fist with my right hand.", {"entities": [[10, 14, "COMMAND"], [15, 22, "MODE"], [27, 34, "ACTION"], [49, 53, "POSE"], [62, 67, "ORIENTATION"], [68, 72, "LANDMARK"]]}),
+    ("I want to play pokemon and walk down when I make a fist with my right hand.", {"entities": [[10, 14, "COMMAND"], [15, 22, "MODE"], [27, 36, "ACTION"], [51, 55, "POSE"], [64, 69, "ORIENTATION"], [70, 74, "LANDMARK"]]}),
+    ("I want to play pokemon and walk left when I make a fist with my right hand.", {"entities": [[10, 14, "COMMAND"], [15, 22, "MODE"], [27, 36, "ACTION"], [51, 55, "POSE"], [64, 69, "ORIENTATION"], [70, 74, "LANDMARK"]]}),
+    ("I want to play pokemon and walk right when I make a fist with my right hand.", {"entities": [[10, 14, "COMMAND"], [15, 22, "MODE"], [27, 37, "ACTION"], [52, 56, "POSE"], [65, 70, "ORIENTATION"], [71, 75, "LANDMARK"]]}),
+    ("I want to play pokemon and walk up when I make a fist with my left hand.", {"entities": [[10, 14, "COMMAND"], [15, 22, "MODE"], [27, 34, "ACTION"], [49, 53, "POSE"], [62, 66, "ORIENTATION"], [67, 71, "LANDMARK"]]}),
+    ("I want to play pokemon and walk down when I make a fist with my left hand.", {"entities": [[10, 14, "COMMAND"], [15, 22, "MODE"], [27, 36, "ACTION"], [51, 55, "POSE"], [64, 68, "ORIENTATION"], [69, 73, "LANDMARK"]]}),
+    ("I want to play pokemon and walk left when I make a fist with my left hand.", {"entities": [[10, 14, "COMMAND"], [15, 22, "MODE"], [27, 36, "ACTION"], [51, 55, "POSE"], [64, 68, "ORIENTATION"], [69, 73, "LANDMARK"]]}),
+    ("I want to play pokemon and walk right when I make a fist with my left hand.", {"entities": [[10, 14, "COMMAND"], [15, 22, "MODE"], [27, 37, "ACTION"], [52, 56, "POSE"], [65, 69, "ORIENTATION"], [70, 74, "LANDMARK"]]}),
+    ("I want to play tetris and rotate the piece when I make a fist.", {"entities": [[10, 14, "COMMAND"], [15, 21, "MODE"], [26, 42, "ACTION"], [57, 61, "POSE"]]}),
+    ("I want to play tetris and move the piece left when I make a fist.", {"entities": [[10, 14, "COMMAND"], [15, 21, "MODE"], [26, 45, "ACTION"], [60, 64, "POSE"]]}),
+    ("I want to play tetris and move the piece right when I make a fist.", {"entities": [[10, 14, "COMMAND"], [15, 21, "MODE"], [26, 46, "ACTION"], [61, 65, "POSE"]]}),
+    ("I want to play tetris and move the piece down when I make a fist.", {"entities": [[10, 14, "COMMAND"], [15, 21, "MODE"], [26, 45, "ACTION"], [60, 64, "POSE"]]}),
+    ("I want to play tetris and hold the piece when I make a fist.", {"entities": [[10, 14, "COMMAND"], [15, 21, "MODE"], [26, 40, "ACTION"], [55, 59, "POSE"]]}),
+    ("I want to play tetris and drop the piece when I make a fist.", {"entities": [[10, 14, "COMMAND"], [15, 21, "MODE"], [26, 40, "ACTION"], [55, 59, "POSE"]]}),
+    ("I want to play tetris and save the piece when I make a fist with my right hand.", {"entities": [[10, 14, "COMMAND"], [15, 21, "MODE"], [26, 40, "ACTION"], [55, 59, "POSE"], [68, 73, "ORIENTATION"], [74, 78, "LANDMARK"]]}),
+    ("I want to play tetris and rotate the piece when I thwip with my right hand.", {"entities": [[10, 14, "COMMAND"], [15, 21, "MODE"], [26, 42, "ACTION"], [50, 55, "POSE"], [64, 69, "ORIENTATION"], [70, 74, "LANDMARK"]]}),
+    ("I want to play tetris and move the piece left when I thwip with my left hand.", {"entities": [[10, 14, "COMMAND"], [15, 21, "MODE"], [26, 45, "ACTION"], [53, 58, "POSE"], [67, 71, "ORIENTATION"], [72, 76, "LANDMARK"]]}),
+    ("I want to play tetris and move the piece right when I thwip with my left hand.", {"entities": [[10, 14, "COMMAND"], [15, 21, "MODE"], [26, 46, "ACTION"], [54, 59, "POSE"], [68, 72, "ORIENTATION"], [73, 77, "LANDMARK"]]}),
 ]
