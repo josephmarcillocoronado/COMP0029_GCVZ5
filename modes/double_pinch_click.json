@@ -1,0 +1,14 @@
+{
+    "poses":[{
+        "file": "hand_double_pinch.py",
+        "action": {
+            "class": "keyboard",
+            "method": "press",
+            "args": ["space"]
+        },
+        "hand": "right",
+        "key_hold": false,
+        "num_frames": 20,
+        "num_repetitions": 2
+    }]
+}

@@ -1,0 +1,16 @@
+{
+    "poses":[
+      {
+        "file": "gun_move.py",
+        "hand": "Left",
+        "multiplier": 1000
+      },
+
+      {
+        "file": "gun_move.py",
+        "hand": "Right",
+        "multiplier": 1000
+      }
+
+    ]
+}

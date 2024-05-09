@@ -1,0 +1,138 @@
+{
+      "config": {
+            "hand": "left"
+      },
+      "poses": [
+            {
+                  "file": "hand_mouse.py"
+            },
+            {
+                  "file": "raise_hand_transcribe.py"
+            },
+            {
+                  "file": "thumb_middle_pinch.json",
+                  "action": {
+                        "class": "keyboard",
+                        "method": "start_scroll",
+                        "args": ["right"]
+                  }
+            },
+            {
+                  "file": "thumb_middle_release.json",
+                  "action": {
+                        "class": "keyboard",
+                        "method": "stop_scroll"
+                  }
+            },
+            {
+                  "file": "thumb_ring_pinch.json",
+                  "action": {
+                        "class": "keyboard",
+                        "method": "start_scroll",
+                        "args": ["up"]
+                  }
+            },
+            {
+                  "file": "thumb_ring_release.json",
+                  "action": {
+                        "class": "keyboard",
+                        "method": "stop_scroll"
+                  }
+            },
+            {
+                  "file": "thumb_index_pinch_hand_closed.json",
+                  "action": {
+                        "class": "keyboard",
+                        "method": "press_special",
+                        "args": [
+                              "press",
+                              "PGUP"
+                            ]
+                  }
+            },
+            {
+                  "file": "thumb_index_release_hand_closed.json",
+                  "action": {
+                        "class": "keyboard",
+                        "method": "press_special",
+                        "args": [
+                              "release",
+                              "PGUP"
+                        ]
+                  }
+            },
+            {
+                  "file": "three_fingers_release_hand_closed.json",
+                  "action": {
+                        "class": "keyboard",
+                        "method": "press_special",
+                        "args": [
+                              "press",
+                              "PGDN"
+                        ]
+                  }
+            },
+            {
+                  "file": "three_fingers_pinch_hand_closed.json",
+                  "action": {
+                        "class": "keyboard",
+                        "method": "press_special",
+                        "args": [
+                              "release",
+                              "PGDN"
+                        ]
+                  }
+            },
+            {
+                  "file": "thumb_index_pinch.json",
+                  "action": {
+                        "class": "mouse",
+                        "method": "hold",
+                        "args": [
+                              "left"
+                        ]
+                  }
+            },
+            {
+                "file": "thumb_up.json",
+                "action": {
+                      "class": "keyboard",
+                      "method": "press_two_keys",
+                      "args": [
+                            "press",
+                            "shift",
+                            "left"
+                    ]
+                }
+          },
+          {
+                "file": "thumb_up.json",
+                "action": {
+                    "class": "keyboard",
+                    "method": "press_two_keys",
+                    "args": [
+                            "press",
+                            "shift",
+                            "left"
+                    ]
+                }
+        },
+        {
+            "file": "pinky_up_education.json",
+            "action": {
+                "class": "keyboard",
+                "method": "press_two_keys",
+                "args": [
+                        "release",
+                        "shift",
+                        "left"
+                ]
+            }
+        }
+      ],
+      "speech": {
+            "transcribe": {
+                  "action": ""
+            }
+      }
+}

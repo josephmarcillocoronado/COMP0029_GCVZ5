@@ -1,0 +1,47 @@
+{
+    "poses":[{
+        "file": "nose_tracking_event.py",
+        "nose_tracking_mode": "ARROW_KEYS_PRESS",
+        "show_face": true,
+        "reset_nose_box": true
+    }
+    ],
+    "speech": {
+        "butterfly": {
+          "action": {
+            "class": "flags",
+            "method": "set",
+            "args": ["reset_nose_box", true]    
+          }
+        },
+        "left click": {
+          "action": {
+            "class": "mouse",
+            "method": "click",
+            "args": ["left"]
+          }
+        },
+        "right click": {
+          "action": {
+            "class": "mouse",
+            "method": "click",
+            "args": ["right"]
+          }
+        },
+        "transcribe": {
+          "action": {
+            "class": "kita_controller",
+            "method": "start_transcription",
+            "args": []
+          },
+          "ignore": "stop transcribe"
+        },
+        "stop transcribe": {
+          "action": {
+            "class": "kita_controller",
+            "method": "stop_transcription",
+            "args": []
+          }
+        }
+    }
+}

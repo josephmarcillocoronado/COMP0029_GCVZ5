@@ -1,0 +1,27 @@
+{
+    "config": {},
+    "poses": [
+        {
+            "file": "fist.json",
+            "action": {
+                "class": "keyboard",
+                "method": "press",
+                "args": [
+                    "w"
+                ]
+            }
+        },
+        {
+            "file": "fist2.json",
+            "action": {
+                "class": "keyboard",
+                "method": "press",
+                "args": [
+                    "m"
+                ]
+            }
+        }
+    ],
+    "gestures": [],
+    "speech": {}
+}

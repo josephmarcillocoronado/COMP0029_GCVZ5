@@ -1,0 +1,61 @@
+{
+    "poses": [
+        {
+            "file": "body_point_tracking_event.py",
+            "landmark": "right_wrist",
+            "gaming_keys": {
+                "down": {
+                    "action": {
+                        "args": [
+                            "s"
+                        ],
+                        "class": "keyboard",
+                        "method": "press"
+                    }
+                },
+                "left": {
+                    "action": {
+                        "args": [
+                            "a"
+                        ],
+                        "class": "keyboard",
+                        "method": "press"
+                    }
+                },
+                "right": {
+                    "action": {
+                        "args": [
+                            "d"
+                        ],
+                        "class": "keyboard",
+                        "method": "press"
+                    }
+                },
+                "up": {
+                    "action": {
+                        "args": [
+                            "w"
+                        ],
+                        "class": "keyboard",
+                        "method": "press"
+                    }
+                }
+            },
+            "bp_tracking_mode": "ARROW_KEYS_PRESS",
+            "reset_bp_box": true,
+            "show_arrows": true
+        }
+    ],
+    "speech": {
+        "butterfly": {
+            "action": {
+                "args": [
+                    "reset_bp_box",
+                    true
+                ],
+                "class": "flags",
+                "method": "set"
+            }
+        }
+    }
+}

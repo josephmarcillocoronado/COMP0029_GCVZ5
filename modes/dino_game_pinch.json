@@ -1,0 +1,22 @@
+{
+    "poses":[{
+        "file": "hand_pinch.py",
+        "action": {
+            "class": "keyboard",
+            "method": "press",
+            "args": ["up"]
+        },
+        "hand": "right",
+        "key_hold": false
+    },
+    {
+        "file": "hand_pinch.py",
+        "action": {
+            "class": "keyboard",
+            "method": "press",
+            "args": ["right"]
+        },
+        "hand": "left",
+        "key_hold": true
+    }]
+}

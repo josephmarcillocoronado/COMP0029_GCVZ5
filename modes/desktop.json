@@ -1,0 +1,27 @@
+{
+  "config": {
+    "hand": "right"
+  },
+  "poses": [
+    {
+      "file": "hand_mouse.py"
+    },
+    {
+      "file": "index_pinch.json",
+      "action": {
+        "class": "mouse",
+        "method": "hold",
+        "args": ["left"]
+      }
+    }
+  ],
+  "speech": {
+    "right click": {
+      "action": {
+        "class": "mouse",
+        "method": "click",
+        "args": ["right"]
+      }
+    }
+  }
+}

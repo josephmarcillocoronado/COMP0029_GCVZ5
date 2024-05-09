@@ -1,0 +1,11 @@
+{
+    "poses": [{
+        "file": "head_trigger.py",
+        "gesture": "smiling",
+        "action":{
+            "class": "keyboard",
+            "method": "press",
+            "args": ["space"]
+        }
+    }]
+}

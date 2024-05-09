@@ -1,0 +1,35 @@
+{
+
+  "config": {
+
+    "hand": "left"
+
+  },
+
+  "poses": [
+
+    {
+
+      "file": "handMousePen.py"
+
+    },
+
+    {
+
+       "file": "raise_hand_transcribe.py"
+
+    }
+
+  ],
+
+  "speech": {
+
+	"transcribe": {
+
+            "action": ""
+
+        }
+
+    }
+
+}

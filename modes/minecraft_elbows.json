@@ -1,0 +1,192 @@
+{
+  "poses": [
+    {
+      "file": "move_joystick.py",
+      "landmark": "left_elbow",
+      "pos": [100, 280]
+    },
+    {
+      "file": "body_mouse.py",
+      "landmark": "right_elbow"
+    },
+    {
+      "file": "body_head_turn.py",
+      "left_flag": "dial"
+    },
+    {
+      "file": "trigger_dial.py",
+      "dial_name": "dial",
+      "landmark": "left_elbow",
+      "anchor": "left_shoulder",
+      "base_offset": -70,
+      "element_offset": 30,
+      "elements":
+      {
+        "open_bag": {
+            "skin": "minecraft/open_bag.png",
+            "action": {
+                "class": "keyboard",
+                "method": "press",
+                "args": ["e"]
+            }
+        },
+        "switch": {
+            "skin": "minecraft/switch.png",
+            "action": {
+                "class": "keyboard",
+                "method": "press",
+                "args": ["f"]
+            }
+        },
+        "throw": {
+            "skin": "minecraft/throw.png",
+            "action": {
+                "class": "keyboard",
+                "method": "press",
+                "args": ["q"]
+            }
+        },
+        "run": {
+            "skin": "minecraft/run.png",
+            "action": {
+                "class": "keyboard",
+                "method": "press",
+                "args": ["ctrl"]
+            }
+        },
+        "jump":{
+            "skin": "minecraft/jump.png",
+            "action": {
+                "class": "keyboard",
+                "method": "press",
+                "args": ["space"]
+            }
+        },
+        "sneak": {
+            "skin": "minecraft/sneak.png",
+            "action": {
+                "class": "keyboard",
+                "method": "press",
+                "args": ["shift"]
+            }
+        },
+        "hit":{
+            "skin": "minecraft/hit.png",
+            "action": {
+                "class": "mouse",
+                "method": "press",
+                "args": ["left"]
+            }
+        },
+        "place": {
+            "skin": "minecraft/place.png",
+            "action": {
+                "class": "mouse",
+                "method": "press",
+                "args": ["right"]
+            }
+        }
+      }
+    }
+  ],
+  "speech": {
+    "open": {
+      "action": {
+        "class": "flags",
+        "method": "set",
+        "args": ["dial", true]
+      }
+    },
+    "close": {
+      "action": {
+        "class": "flags",
+        "method": "set",
+        "args": ["dial", false]
+      }
+    },
+    "one": {
+      "action": {
+        "class": "keyboard",
+        "method": "press",
+        "args": ["1"]
+      }
+    },
+    "two": {
+      "action": {
+        "class": "keyboard",
+        "method": "press",
+        "args": ["2"]
+      }
+    },
+    "to": {
+      "action": {
+        "class": "keyboard",
+        "method": "press",
+        "args": ["2"]
+      }
+    },
+    "three": {
+      "action": {
+        "class": "keyboard",
+        "method": "press",
+        "args": ["3"]
+      }
+    },
+    "four": {
+      "action": {
+        "class": "keyboard",
+        "method": "press",
+        "args": ["4"]
+      }
+    },
+    "for": {
+      "action": {
+        "class": "keyboard",
+        "method": "press",
+        "args": ["4"]
+      }
+    },
+    "five": {
+      "action": {
+        "class": "keyboard",
+        "method": "press",
+        "args": ["5"]
+      }
+    },
+    "six": {
+      "action": {
+        "class": "keyboard",
+        "method": "press",
+        "args": ["6"]
+      }
+    },
+    "seven": {
+      "action": {
+        "class": "keyboard",
+        "method": "press",
+        "args": ["7"]
+      }
+    },
+    "eight": {
+      "action": {
+        "class": "keyboard",
+        "method": "press",
+        "args": ["8"]
+      }
+    },
+    "ate": {
+      "action": {
+        "class": "keyboard",
+        "method": "press",
+        "args": ["8"]
+      }
+    },
+    "nine": {
+      "action": {
+        "class": "keyboard",
+        "method": "press",
+        "args": ["9"]
+      }
+    }
+  }
+}

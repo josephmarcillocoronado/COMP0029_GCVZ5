@@ -1,0 +1,9 @@
+{
+    "poses": [
+        {
+            "file": "head_suika_controller.py",
+            "method": "tilt",
+            "show_face": false
+        }
+    ]
+}

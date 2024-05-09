@@ -1,0 +1,18 @@
+{
+    "poses":[{
+        "file": "hand_pinch.py",
+        "action": {
+            "class": "mouse",
+            "method": "click",
+            "args": ["left"]
+        },
+        "hand": "left",
+        "key_hold": false
+    }]
+,
+    "speech": {
+        "transcribe": {
+            "action": ""
+        }
+    }
+}

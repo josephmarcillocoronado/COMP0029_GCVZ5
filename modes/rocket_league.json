@@ -1,0 +1,56 @@
+{
+  "poses": [
+    {
+      "file": "drive.py",
+      "mode": "keyboard",
+      "left": {
+        "module": "body",
+        "landmark": "left_elbow"
+      },
+      "right": {
+        "module": "body",
+        "landmark": "right_elbow"
+      }
+    },
+    {
+      "file": "hit_trigger.py",
+      "landmark": "left_elbow",
+      "pos": [140, 190],
+      "action": {
+        "class": "mouse",
+        "method": "click",
+        "args": ["right"]
+      }
+    },
+    {
+      "file": "hit_trigger.py",
+      "landmark": "left_elbow",
+      "pos": [140, 330],
+      "action": {
+        "class": "mouse",
+        "method": "click",
+        "args": ["left"]
+      }
+    },
+    {
+      "file": "hit_trigger.py",
+      "landmark": "right_elbow",
+      "pos": [500, 190],
+      "action": {
+        "class": "keyboard",
+        "method": "hold",
+        "args": ["shift"]
+      }
+    },
+    {
+      "file": "hit_trigger.py",
+      "landmark": "right_elbow",
+      "pos": [500, 330],
+      "action": {
+        "class": "keyboard",
+        "method": "click",
+        "args": ["space"]
+      }
+    }
+  ]
+}

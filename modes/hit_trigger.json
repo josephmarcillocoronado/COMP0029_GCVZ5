@@ -1,0 +1,13 @@
+{
+    "poses": [{
+        "file": "hit_trigger.py",
+        "landmark": "right_wrist",
+        "pos": [500, 400],
+        "dwell": 0.1,
+        "action": {
+          "class": "keyboard",
+          "method": "press",
+          "args": ["space"]
+        }
+      }]
+}

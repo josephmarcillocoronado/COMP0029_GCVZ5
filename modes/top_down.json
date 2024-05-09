@@ -1,0 +1,15 @@
+{
+  "config": {
+    "hand": "right",
+    "view": {
+      "flip_vertical": true
+    }
+  },
+  "poses": [
+    {
+      "file": "move_joystick.py",
+      "landmark": "left_wrist",
+      "pos": [120, 230]
+    }
+  ]
+}

@@ -1,0 +1,208 @@
+{
+  "poses": [
+    {
+      "file": "joystick_press.py",
+      "gesture" : {
+        "thumb_stretched": true,
+        "index_stretched": true,
+        "middle_stretched": true,
+        "ring_folded": true,
+        "pinky_stretched": true
+      },
+      "hand" : "left",
+      "action": {
+        "class": "gamepad",
+        "method": "press",
+        "args": ["up"]
+      }
+    },
+    {
+      "file": "joystick_press.py",
+      "gesture" : {
+        "thumb_stretched": true,
+        "index_stretched": true,
+        "middle_folded": true,
+        "ring_stretched": true,
+        "pinky_stretched": true
+      },
+      "hand" : "left",
+      "action": {
+        "class": "gamepad",
+        "method": "press",
+        "args": ["down"]
+      }
+    },
+    {
+      "file": "joystick_press.py",
+      "gesture" : {
+        "thumb_stretched": true,
+        "index_stretched": true,
+        "middle_stretched": true,
+        "ring_folded": false,
+        "pinky_folded": true
+      },
+      "hand" : "left",
+      "action": {
+        "class": "gamepad",
+        "method": "press",
+        "args": ["left"]
+      }
+    },
+    {
+      "file": "joystick_press.py",
+      "gesture" : {
+        "thumb_folded": true,
+        "index_stretched": true,
+        "middle_stretched": true,
+        "ring_stretched": true,
+        "pinky_stretched": true
+      },
+      "hand" : "left",
+      "action": {
+        "class": "gamepad",
+        "method": "press",
+        "args": ["s_left"]
+      }
+    },
+    {
+      "file": "joystick_press.py",
+      "gesture" : {
+        "thumb_folded": true,
+        "index_stretched": true,
+        "middle_stretched": true,
+        "ring_stretched": true,
+        "pinky_stretched": true
+      },
+      "hand" : "right",
+      "action": {
+        "class": "gamepad",
+        "method": "press",
+        "args": ["s_right"]
+      }
+    },
+    {
+      "file": "joystick_press.py",
+      "gesture" : {
+        "thumb_stretched": true,
+        "index_stretched": true,
+        "middle_folded": true,
+        "ring_stretched": true,
+        "pinky_stretched": true
+      },
+      "hand" : "right",
+      "action": {
+        "class": "gamepad",
+        "method": "press",
+        "args": ["a"]
+      }
+    },
+    {
+      "file": "joystick_press.py",
+      "gesture" : {
+        "thumb_stretched": true,
+        "index_stretched": true,
+        "middle_stretched": true,
+        "ring_folded": false,
+        "pinky_folded": true
+      },
+      "hand" : "right",
+      "action": {
+        "class": "gamepad",
+        "method": "press",
+        "args": ["b"]
+      }
+    },
+    {
+      "file": "joystick_press.py",
+      "gesture" : {
+        "thumb_stretched": true,
+        "index_folded": true,
+        "middle_stretched": true,
+        "ring_stretched": true,
+        "pinky_stretched": true
+      },
+      "hand" : "right",
+      "action": {
+        "class": "gamepad",
+        "method": "press",
+        "args": ["x"]
+      }
+    },
+    {
+      "file": "joystick_press.py",
+      "gesture" : {
+        "thumb_stretched": true,
+        "index_stretched": true,
+        "middle_stretched": true,
+        "ring_folded": true,
+        "pinky_stretched": true
+      },
+      "hand" : "right",
+      "action": {
+        "class": "gamepad",
+        "method": "press",
+        "args": ["y"]
+      }
+    },
+    {
+      "file": "joystick_press.py",
+      "gesture" : {
+        "index_pinched": false,
+        "middle_pinched": false,
+        "ring_pinched": false,
+        "pinky_pinched": true,
+        "palm_facing_camera": true
+      },
+      "hand" : "right",
+      "action": {
+        "class": "gamepad",
+        "method": "press",
+        "args": ["start"]
+      }
+    },
+    {
+      "file": "joystick_press.py",
+      "gesture" : {
+        "index_pinched": false,
+        "middle_pinched": false,
+        "ring_pinched": false,
+        "pinky_pinched": true,
+        "palm_facing_camera": true
+      },
+      "hand" : "left",
+      "action": {
+        "class": "gamepad",
+        "method": "press",
+        "args": ["back"]
+      }
+    },
+    {
+      "file": "joystick_wrist.py",
+      "hand" : "left",
+      "switch": "on",
+      "mode": "default",
+      "analog_name": "sticks"
+    },
+    {
+      "file": "joystick_wrist.py",
+      "hand" : "right",
+      "switch": "on",
+      "mode": "default",
+      "analog_name": "sticks"
+    },
+    {
+      "file": "joystick_wrist.py",
+      "hand" : "left",
+      "switch": "on",
+      "mode": "swap",
+      "analog_name": "triggers"
+    },
+    {
+      "file": "joystick_wrist.py",
+      "hand" : "right",
+      "switch": "on",
+      "mode": "swap",
+      "analog_name": "triggers"
+    }
+  ]
+}

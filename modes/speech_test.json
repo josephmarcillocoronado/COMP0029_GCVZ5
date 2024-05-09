@@ -1,0 +1,77 @@
+{
+  "speech": {
+    "right click": {
+      "action": {
+        "class": "mouse",
+        "method": "click",
+        "args": ["right"]
+      }
+    },
+    "transcribe": {
+      "action": {
+        "class": "kita_controller",
+        "method": "start_transcription",
+        "args": []
+      },
+      "ignore": "stop transcribe"
+    },
+    "stop transcribe": {
+      "action": {
+        "class": "kita_controller",
+        "method": "stop_transcription",
+        "args": []
+      }
+    },
+    "special mode": {
+      "action": {
+        "class": "kita_controller",
+        "method": "enable_submodes",
+        "args": ["spelling", "profanity", "digits", "punctuation", "speech_commands"]
+      },
+      "ignore": "stop special mode"
+    },
+    "stop special mode": {
+      "action": {
+        "class": "kita_controller",
+        "method": "disable_submodes",
+        "args": ["spelling", "profanity", "digits", "punctuation", "speech_commands"]
+      }
+    },
+    "speaker identify": {
+      "action": {
+        "class": "kita_controller",
+        "method": "start_speaker_identification",
+        "args": []
+      },
+      "ignore": "stop speaker identify"
+    },
+    "stop speaker identify": {
+      "action": {
+        "class": "kita_controller",
+        "method": "stop_speaker_identification",
+        "args": []
+      }
+    },
+    "enable speaker id": {
+      "action": {
+        "class": "kita_controller",
+        "method": "enable_speaker_id",
+        "args": []
+      }
+    },
+    "disable speaker id": {
+      "action": {
+        "class": "kita_controller",
+        "method": "disable_speaker_id",
+        "args": []
+      }
+    },
+    "remove locked speaker": {
+      "action": {
+        "class": "kita_controller",
+        "method": "remove_locked_speaker",
+        "args": []
+      }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+    "poses": [{
+        "file": "body_points.py",
+        "point1": "left_hand",
+        "point2": "head",
+        "action":{
+            "class": "keyboard",
+            "method": "press",
+            "args": ["space"]
+        }
+    }]
+}

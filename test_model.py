@@ -2,20 +2,18 @@ import spacy
 from spacy import displacy
 from spacy.training import Example
 from test_data import TEST_DATA
+from entity_matchers import Matchers
 
-def save_ner_visualization(model_path, test_data, output_html="ner_entities.html"):
+
+def save_ner_visualization(nlp_model, test_data, output_html):
     """
-    Load a trained spaCy model, run it on test data, and save a combined NER visualization file.
+    Use a loaded spaCy model, run it on test data, and save a combined NER visualization file.
 
     Parameters:
-        model_path (str): Path to the folder containing the trained model.
+        nlp_model (Language): A spaCy language model loaded in memory.
         test_data (list): List of tuples, where each tuple contains a text and expected entities.
         output_html (str): Name of the output HTML file for NER visualization.
     """
-    # Load the trained model
-    nlp = spacy.load(model_path)
-
-    # Initialize HTML structure
     html_content = """
     <!DOCTYPE html>
     <html lang="en">
@@ -29,35 +27,27 @@ def save_ner_visualization(model_path, test_data, output_html="ner_entities.html
 
     for index, (text, _) in enumerate(test_data):
         doc = nlp(text)
-
-        # Render named entities and append to the NER HTML
         entity_html = displacy.render(doc, style="ent", jupyter=False)
         html_content += f"<h2>Entities for Test Sentence {index + 1}</h2>"
         html_content += entity_html
 
-    # Close HTML structure
     html_content += "</body></html>"
 
-    # Save the combined NER visualization to an HTML file
     with open(output_html, "w") as file:
         file.write(html_content)
 
     print(f"NER visualization file '{output_html}' saved.")
 
 
-def save_dependency_visualization(model_path, test_data, output_html="dependency_parsing.html"):
+def save_dependency_visualization(nlp_model, test_data, output_html):
     """
-    Load a trained spaCy model, run it on test data, and save a combined dependency parsing visualization file.
+    Use a loaded spaCy model, run it on test data, and save a combined dependency parsing visualization file.
 
     Parameters:
-        model_path (str): Path to the folder containing the trained model.
+        nlp_model (Language): A spaCy language model loaded in memory.
         test_data (list): List of tuples, where each tuple contains a text and expected entities.
         output_html (str): Name of the output HTML file for dependency parsing visualization.
     """
-    # Load the trained model
-    nlp = spacy.load(model_path)
-
-    # Initialize HTML structure
     html_content = """
     <!DOCTYPE html>
     <html lang="en">
@@ -71,59 +61,60 @@ def save_dependency_visualization(model_path, test_data, output_html="dependency
 
     for index, (text, _) in enumerate(test_data):
         doc = nlp(text)
-
-        # Render dependency parsing and append to the dependency HTML
         dep_html = displacy.render(doc, style="dep", jupyter=False)
         html_content += f"<h2>Dependencies for Test Sentence {index + 1}</h2>"
         html_content += dep_html
 
-    # Close HTML structure
     html_content += "</body></html>"
 
-    # Save the combined dependency parsing visualization to an HTML file
     with open(output_html, "w") as file:
         file.write(html_content)
 
     print(f"Dependency parsing visualization file '{output_html}' saved.")
 
 
-def evaluate_ner_model(model_path, test_data):
+def evaluate_ner_model(nlp_model, test_data):
     """
     Evaluate a trained spaCy NER model using test data and print performance scores.
 
     Parameters:
-        model_path (str): Path to the folder containing the trained model.
+        nlp_model (Language): A spaCy language model loaded in memory.
         test_data (list): List of tuples, where each tuple contains a text and a dictionary of expected entities.
     """
-    # Load the trained model
-    nlp = spacy.load(model_path)
-
-    # Create a list to store Example objects for evaluation
     examples = []
-
-    # Convert test data to spaCy Example objects
     for text, annotations in test_data:
         doc = nlp.make_doc(text)
         example = Example.from_dict(doc, annotations)
         examples.append(example)
 
-    # Evaluate the NER component on the test examples
     scorer = nlp.evaluate(examples)
 
-    # Print evaluation metrics
     print("NER Evaluation Results:")
     print(f"Precision: {scorer['ents_p']:.3f}")
     print(f"Recall: {scorer['ents_r']:.3f}")
     print(f"F1 Score: {scorer['ents_f']:.3f}")
     print(f"Number of Tokenization Issues: {scorer['token_acc']:.3f}")
 
+
 if __name__ == "__main__":
-    # Path to the folder containing the trained model
+    # Load the trained model once
     model_directory = "nlp_model"  # Replace with your trained model's path
+    nlp = spacy.load(model_directory)
 
-    # Save separate visualizations for NER and dependency parsing
-    save_ner_visualization(model_directory, TEST_DATA)
-    save_dependency_visualization(model_directory, TEST_DATA)
+    # Save NER and dependency parsing visualizations with all components active
+    save_ner_visualization(nlp, TEST_DATA, "ner_entities.html")
+    save_dependency_visualization(nlp, TEST_DATA, "dependency_parsing.html")
 
-    # Evaluate the NER model
-    evaluate_ner_model(model_directory, TEST_DATA)
+    # Temporarily disable NER and visualize matcher-only entities
+    with nlp.select_pipes(disable=["ner"]):
+        save_ner_visualization(nlp, TEST_DATA, "matcher_only_entities.html")
+        save_dependency_visualization(nlp, TEST_DATA, "matcher_only_dependency.html")
+
+
+    # Evaluate the NER model with all components active
+    evaluate_ner_model(nlp, TEST_DATA)
+
+    doc = nlp("Perform the thwip mode.")
+    for ent in doc.ents:
+        print(f"Entity: {ent.text}, Label: {ent.label_}")
+

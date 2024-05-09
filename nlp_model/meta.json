@@ -98,12 +98,16 @@
   "pipeline":[
     "tok2vec",
     "parser",
-    "ner"
+    "ner",
+    "modes_entity_matcher",
+    "poses_entity_matcher"
   ],
   "components":[
     "tok2vec",
     "parser",
-    "ner"
+    "ner",
+    "modes_entity_matcher",
+    "poses_entity_matcher"
   ],
   "disabled":[
 

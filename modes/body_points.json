@@ -1,0 +1,14 @@
+{
+    "poses": [{
+        "file": "body_points.py",
+        "point1": "right_hand",
+        "point2": "body",
+        "threshold_distance": 0.4,
+        "interval_angle": [0, 90],
+        "action":{
+            "class": "keyboard",
+            "method": "press",
+            "args": ["space"]
+        }        
+    }]
+}

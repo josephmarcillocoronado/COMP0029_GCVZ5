@@ -1,0 +1,11 @@
+{
+    "poses":[
+      {
+        "file": "samurai_swipe_event.py",
+        "off_hand": "Left",
+        "dom_hand": "Right",
+        "sensitivity": 0.4
+      }
+
+    ]
+}

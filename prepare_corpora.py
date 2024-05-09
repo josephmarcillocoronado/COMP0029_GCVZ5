@@ -34,13 +34,13 @@ if __name__ == "__main__":
     test_data_file_path = "test_data.jsonl"  # Update with your input testing file path
     test_data_output_py_file_path = "test_data.py"    # Update with your desired output Python file path
 
-    training_data_file_path = "training_data.jsonl"  # Update with your input training file path
-    training_data_output_py_file_path = "training_data.py"    # Update with your desired output Python file path
+ #   training_data_file_path = "training_data.jsonl"  # Update with your input training file path
+  #  training_data_output_py_file_path = "training_data.py"    # Update with your desired output Python file path
 
     # Convert test data and save with "TEST_DATA" variable name
     convert_to_spacy_format(test_data_file_path, test_data_output_py_file_path, "TEST_DATA")
     # Convert training data and save with "TRAIN_DATA" variable name
-    convert_to_spacy_format(training_data_file_path, training_data_output_py_file_path, "TRAIN_DATA")
+   # convert_to_spacy_format(training_data_file_path, training_data_output_py_file_path, "TRAIN_DATA")
 
-    print(f"Training data successfully converted and saved to {training_data_output_py_file_path}")
+    #print(f"Training data successfully converted and saved to {training_data_output_py_file_path}")
     print(f"Test data successfully converted and saved to {test_data_output_py_file_path}")

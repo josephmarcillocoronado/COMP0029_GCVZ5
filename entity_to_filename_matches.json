@@ -1,0 +1,18 @@
+{
+    "index pinch": {
+        "best_match": "index pinch",
+        "cosine_similarity": 1.0
+    },
+    "fist": {
+        "best_match": "fist",
+        "cosine_similarity": 1.0
+    },
+    "move the piece": {
+        "best_match": "hand forward",
+        "cosine_similarity": 0.33519986271858215
+    },
+    "thwip": {
+        "best_match": "thwip",
+        "cosine_similarity": 1.0
+    }
+}

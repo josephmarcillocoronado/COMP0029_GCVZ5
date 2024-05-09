@@ -1,0 +1,10 @@
+{
+    "config":{
+        "hand": "right"
+    },
+    "poses": [
+      {
+        "file": "raise_hand_transcribe.py"
+      }
+    ]
+}

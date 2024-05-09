@@ -1,0 +1,9 @@
+{
+    "poses":[
+        {
+            "file": "sound_pose.py",
+            "sound_name": "bang", 
+            "hand": "left"
+        }
+    ]
+}

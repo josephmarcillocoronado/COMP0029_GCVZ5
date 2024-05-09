@@ -1,0 +1,60 @@
+{
+    "poses": [
+        {
+            "file": "nose_tracking_event.py",
+            "gaming_keys": {
+                "down": {
+                    "action": {
+                        "args": [
+                            "s"
+                        ],
+                        "class": "keyboard",
+                        "method": "press"
+                    }
+                },
+                "left": {
+                    "action": {
+                        "args": [
+                            "a"
+                        ],
+                        "class": "keyboard",
+                        "method": "press"
+                    }
+                },
+                "right": {
+                    "action": {
+                        "args": [
+                            "d"
+                        ],
+                        "class": "keyboard",
+                        "method": "press"
+                    }
+                },
+                "up": {
+                    "action": {
+                        "args": [
+                            "w"
+                        ],
+                        "class": "keyboard",
+                        "method": "press"
+                    }
+                }
+            },
+            "nose_tracking_mode": "ARROW_KEYS_HOLD",
+            "reset_nose_box": true,
+            "show_face": true
+        }
+    ],
+    "speech": {
+        "butterfly": {
+            "action": {
+                "args": [
+                    "reset_nose_box",
+                    true
+                ],
+                "class": "flags",
+                "method": "set"
+            }
+        }
+    }
+}

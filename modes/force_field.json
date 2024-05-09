@@ -1,0 +1,12 @@
+{
+    "config":{
+        "hand": "right"
+    },
+    "poses": [
+      {
+        "file": "forcefield_event.py",
+        "buttons": ["w_hold"],
+        "depth_buffer_size": 2
+      }
+    ]
+}
