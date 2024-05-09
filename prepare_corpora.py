@@ -31,7 +31,7 @@ def convert_to_spacy_format(input_file, output_py_file, variable_name):
 
 if __name__ == "__main__":
     # Replace these paths with the paths to your input and output files
-    test_data_file_path = "test_data.jsonl"  # Update with your input testing file path
+    test_data_file_path = "test_data2.jsonl"  # Update with your input testing file path
     test_data_output_py_file_path = "test_data.py"    # Update with your desired output Python file path
 
  #   training_data_file_path = "training_data.jsonl"  # Update with your input training file path

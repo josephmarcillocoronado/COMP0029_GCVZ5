@@ -92,7 +92,7 @@ def plot_metric_combined(scores_dict, metric_name, ylabel):
 
     plt.xlabel("Iterations")
     plt.ylabel(ylabel)
-    plt.title(f"{metric_name} vs. Training Iterations for Different Dropout Rates")
+    plt.title(f"{metric_name} vs Iterations per Dropout Rate")
     plt.legend()
     plt.grid(True)
     plt.show()
@@ -152,7 +152,7 @@ def train_ner_multiple_drops(train_data, test_data, output_path, iterations, dro
     plot_metric_combined(recall_scores_dict, "Recall", "Recall")
 
     # Plot the moving average F1 scores for each dropout rate
-    plot_metric_combined(moving_avg_dict, "Moving Average F1 Score (Last 50 Iterations)", "Moving Average F1 Score")
+    plot_metric_combined(moving_avg_dict, "Moving Average F1 Score (Last 10 Iterations)", "Moving Average F1 Score")
 
 def main(output_dir, iterations=1000, dropout_values=[0.1, 0.3, 0.5]):
     # Prepare training and test data
@@ -167,4 +167,4 @@ def main(output_dir, iterations=1000, dropout_values=[0.1, 0.3, 0.5]):
 
 if __name__ == "__main__":
     output_folder = "nlp_model"  # Update with your desired folder path
-    main(output_folder, iterations=1000, dropout_values=[0.1, 0.3, 0.5])
+    main(output_folder, iterations=300, dropout_values=[0.3])
