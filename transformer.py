@@ -4,20 +4,20 @@ import spacy
 from sentence_transformers import SentenceTransformer, util
 from entity_matchers import Matchers
 from test_data import TEST_DATA
-from training_data import TRAIN_DATA
+
 class NamedEntityMatcher:
     """
     A class to match named entities to the most similar file names using a Sentence Transformer model.
     """
-    def __init__(self, model_name='all-MiniLM-L6-v2', json_dir=None):
+    def __init__(self, model_path='transformer_model', json_dir=None):
         """
         Initialize the NamedEntityMatcher class.
 
         Parameters:
-        - model_name (str): Name of the pre-trained model to use.
+        - model_path (str): Path to the fine-tuned model directory to use.
         - json_dir (str): Directory path containing the JSON files to compare. Defaults to None.
         """
-        self.model = SentenceTransformer(model_name)
+        self.model = SentenceTransformer(model_path)  # Load the fine-tuned model
         self.json_dir = json_dir
         self.json_files = []
         if json_dir:
@@ -147,10 +147,10 @@ if __name__ == "__main__":
     nlp_model_dir = 'nlp_model'
 
     # Load the NER model and identify entities with the "POSE" label from the test data
-    named_entities = load_and_run_ner(nlp_model_dir, TRAIN_DATA)
+    named_entities = load_and_run_ner(nlp_model_dir, TEST_DATA)
 
-    # Instantiate the NamedEntityMatcher with an empty JSON directory initially
-    matcher = NamedEntityMatcher()
+    # Instantiate the NamedEntityMatcher with the fine-tuned model
+    matcher = NamedEntityMatcher(model_path='transformer_model')
 
     # Set the JSON directory to load
     matcher.set_json_directory('poses/json')
