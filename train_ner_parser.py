@@ -167,4 +167,4 @@ def main(output_dir, iterations=1000, dropout_values=[0.1, 0.3, 0.5]):
 
 if __name__ == "__main__":
     output_folder = "nlp_model"  # Update with your desired folder path
-    main(output_folder, iterations=300, dropout_values=[0.3])
+    main(output_folder, iterations=300, dropout_values=[0.2])

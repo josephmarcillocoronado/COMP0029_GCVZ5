@@ -1,15 +1,47 @@
 {
-    "index pinch": {
-        "best_match": "index pinch",
-        "cosine_similarity": 1.0
-    },
     "fist": {
         "best_match": "fist",
         "cosine_similarity": 1.0
     },
-    "move the piece": {
-        "best_match": "hand forward",
-        "cosine_similarity": 0.33519986271858215
+    "index pinch": {
+        "best_match": "index pinch",
+        "cosine_similarity": 1.0
+    },
+    "thumb index pinch": {
+        "best_match": "thumb index pinch",
+        "cosine_similarity": 1.0
+    },
+    "thumbs up": {
+        "best_match": "thumb up",
+        "cosine_similarity": 0.6661233305931091
+    },
+    "three fingers pinch": {
+        "best_match": "three fingers pinch",
+        "cosine_similarity": 1.0000001192092896
+    },
+    "three fingers": {
+        "best_match": "three fingers",
+        "cosine_similarity": 1.0
+    },
+    "shoot": {
+        "best_match": "shoot",
+        "cosine_similarity": 1.0000001192092896
+    },
+    "thumb down": {
+        "best_match": "thumb up",
+        "cosine_similarity": 0.8525450229644775
+    },
+    "move the mouse": {
+        "best_match": "gun click",
+        "cosine_similarity": 0.38782089948654175
+    },
+    "Attach the mouse": {
+        "best_match": "gun click",
+        "cosine_similarity": 0.3740353584289551
+    },
+    "switch to": {
+        "best_match": "shoot",
+        "cosine_similarity": 0.30313432216644287
     },
     "thwip": {
         "best_match": "thwip",
