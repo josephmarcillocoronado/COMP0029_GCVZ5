@@ -1,0 +1,62 @@
+{
+    "config": {
+        "hand": "left"
+    },
+    "poses": [
+        {
+            "file": "index_pinch.json",
+            "control": "move left",
+            "action": {
+                "class": "keyboard",
+                "method": "hold",
+                "args": [
+                    "left"
+                ]
+            }
+        },
+        {
+            "file": "fist2.json",
+            "control": "move right",
+            "action": {
+                "class": "keyboard",
+                "method": "hold",
+                "args": [
+                    "right"
+                ]
+            }
+        },
+        {
+            "file": "thwip.json",
+            "control": "drop piece",
+            "action": {
+                "class": "keyboard",
+                "method": "press",
+                "args": [
+                    "space"
+                ]
+            }
+        },
+        {
+            "file": "peace.json",
+            "control": "rotate piece",
+            "action": {
+                "class": "keyboard",
+                "method": "press",
+                "args": [
+                    "z"
+                ]
+            }
+        },
+        {
+            "file": "peace.json",
+            "control": "hold piece",
+            "action": {
+                "class": "mouse",
+                "method": "click",
+                "args": [
+                    "right"
+                ]
+            }
+        }
+    ]
+}

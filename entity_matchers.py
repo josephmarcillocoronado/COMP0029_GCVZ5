@@ -16,7 +16,7 @@ def get_patterns_from_directory(directory_path):
         List of spaCy matcher patterns.
     """
     patterns = []
-    with open("patterns_output.txt", "w") as log_file:  # Output file for patterns
+    with open("train_test_data/patterns_output.txt", "w") as log_file:  # Output file for patterns
         for filename in os.listdir(directory_path):
             if filename.endswith(".json"):
                 # Strip the .json extension and replace underscores with spaces

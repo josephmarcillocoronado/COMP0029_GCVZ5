@@ -1,10 +1,10 @@
 import spacy
 from spacy.training import Example
-from training_data import TRAIN_DATA
-from test_data import TEST_DATA
-from entity_matchers import Matchers
+from train_test_data.training_data import TRAIN_DATA
+from train_test_data.test_data import TEST_DATA
 import matplotlib.pyplot as plt
 import os
+from entity_matchers import Matchers
 
 def add_ner_labels(nlp, train_data):
     # Retrieve the NER component
@@ -167,4 +167,4 @@ def main(output_dir, iterations=1000, dropout_values=[0.1, 0.3, 0.5]):
 
 if __name__ == "__main__":
     output_folder = "nlp_model"  # Update with your desired folder path
-    main(output_folder, iterations=300, dropout_values=[0.2])
+    main(output_folder, iterations=300, dropout_values=[0.3])

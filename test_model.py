@@ -1,8 +1,7 @@
 import spacy
 from spacy import displacy
 from spacy.training import Example
-from test_data import TEST_DATA
-from entity_matchers import Matchers
+from train_test_data.test_data import TEST_DATA
 
 
 def save_ner_visualization(nlp_model, test_data, output_html):

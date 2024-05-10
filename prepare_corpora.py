@@ -27,20 +27,32 @@ def convert_to_spacy_format(input_file, output_py_file, variable_name):
         for text, annotations in spacy_data:
             outfile.write(f"    ({json.dumps(text)}, {json.dumps(annotations)}),\n")
         outfile.write("]\n")
+def convert_to_plain_text(input_file, output_file):
+    """
+    Converts a dataset from a custom JSONL format to plain text format.
 
+    Parameters:
+        input_file (str): Path to the input JSONL file containing the original data.
+        output_file (str): Path to the output plain text file.
+    """
+    with open(input_file, "r") as infile, open(output_file, "w") as outfile:
+        for line in infile:
+            entry = json.loads(line.strip())
+            text = entry["text"]
+            outfile.write(text + "\n")
 
 if __name__ == "__main__":
     # Replace these paths with the paths to your input and output files
-    test_data_file_path = "test_data2.jsonl"  # Update with your input testing file path
-    test_data_output_py_file_path = "test_data.py"    # Update with your desired output Python file path
+    test_data_file_path = "train_test_data/test_data2.jsonl"  # Update with your input testing file path
+    test_data_output_py_file_path = "train_test_data/test_data.py"  # Update with your desired output Python file path
 
- #   training_data_file_path = "training_data.jsonl"  # Update with your input training file path
-  #  training_data_output_py_file_path = "training_data.py"    # Update with your desired output Python file path
+    training_data_file_path = "train_test_data/training_data2.jsonl"  # Update with your input training file path
+    training_data_output_py_file_path = "train_test_data/training_data.py"  # Update with your desired output Python file path
 
     # Convert test data and save with "TEST_DATA" variable name
-    convert_to_spacy_format(test_data_file_path, test_data_output_py_file_path, "TEST_DATA")
+    #convert_to_spacy_format(test_data_file_path, test_data_output_py_file_path, "TEST_DATA")
     # Convert training data and save with "TRAIN_DATA" variable name
    # convert_to_spacy_format(training_data_file_path, training_data_output_py_file_path, "TRAIN_DATA")
-
-    #print(f"Training data successfully converted and saved to {training_data_output_py_file_path}")
-    print(f"Test data successfully converted and saved to {test_data_output_py_file_path}")
+    #convert_to_plain_text(training_data_file_path, "train_test_data/training_data.txt")
+    print(f"Training data successfully converted and saved to {training_data_output_py_file_path}")
+    #print(f"Test data successfully converted and saved to {test_data_output_py_file_path}")

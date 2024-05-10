@@ -1,0 +1,228 @@
+{"id":426,"text":"I want to play Minecraft.","label":[[10,14,"COMMAND"],[15,24,"MODE"]],"Comments":[]}
+{"id":427,"text":"Start playing Minecraft with my right hand.","label":[[0,5,"COMMAND"],[14,23,"MODE"],[32,37,"ORIENTATION"],[38,42,"LANDMARK"]],"Comments":[]}
+{"id":428,"text":"Place a block down.","label":[[0,18,"ACTION"]],"Comments":[]}
+{"id":429,"text":"I love Minecraft.","label":[[7,16,"MODE"]],"Comments":[]}
+{"id":430,"text":"hold my fist to place a block down.","label":[[8,12,"POSE"],[16,34,"ACTION"]],"Comments":[]}
+{"id":431,"text":"i want to pass the ball when i have my fist up.","label":[[10,23,"ACTION"],[39,46,"POSE"]],"Comments":[]}
+{"id":432,"text":"i  want to kick the ball when i kick in real life.","label":[[11,24,"ACTION"],[32,36,"GESTURE"]],"Comments":[]}
+{"id":433,"text":"i want to activate mario with my left hand.","label":[[10,18,"COMMAND"],[19,24,"MODE"],[33,37,"ORIENTATION"],[38,42,"LANDMARK"]],"Comments":[]}
+{"id":434,"text":"I want to cast a spell with an index pinch.","label":[[10,22,"ACTION"],[31,42,"POSE"]],"Comments":[]}
+{"id":435,"text":"Block attacks with a thumb index pinch.","label":[[0,13,"ACTION"],[21,38,"POSE"]],"Comments":[]}
+{"id":436,"text":"Use the index pinch to interact with objects.","label":[[8,19,"POSE"],[23,44,"ACTION"]],"Comments":[]}
+{"id":437,"text":"To crouch just do a thumbs up.","label":[[3,9,"ACTION"],[20,29,"POSE"]],"Comments":[]}
+{"id":438,"text":"Rotate item with a three fingers pinch.","label":[[0,11,"ACTION"],[19,38,"POSE"]],"Comments":[]}
+{"id":439,"text":"I want to jump using three fingers.","label":[[10,14,"ACTION"],[21,34,"POSE"]],"Comments":[]}
+{"id":440,"text":"I want to walk in game when I show a fist.","label":[[10,14,"ACTION"],[37,41,"POSE"]],"Comments":[]}
+{"id":441,"text":"In Pokemon.","label":[[3,10,"MODE"]],"Comments":[]}
+{"id":442,"text":"do.","label":[],"Comments":[]}
+{"id":443,"text":"three fingers to destroy.","label":[[0,13,"POSE"],[17,24,"ACTION"]],"Comments":[]}
+{"id":444,"text":"I want to place down a block when I do index pinch.","label":[[10,28,"ACTION"],[39,50,"POSE"]],"Comments":[]}
+{"id":445,"text":"Please start Rocket League.","label":[[7,12,"COMMAND"],[13,26,"MODE"]],"Comments":[]}
+{"id":446,"text":"I use my left hand for navigation.","label":[[9,13,"ORIENTATION"],[14,18,"LANDMARK"],[23,33,"ACTION"]],"Comments":[]}
+{"id":447,"text":"clench a fist to boost speed.","label":[[9,13,"POSE"],[17,28,"ACTION"]],"Comments":[]}
+{"id":448,"text":"making a kicking motion to shoot the ball towards the goal.","label":[[9,23,"GESTURE"],[27,41,"ACTION"]],"Comments":[]}
+{"id":449,"text":"Start body points mode.","label":[[0,5,"COMMAND"],[6,22,"MODE"]],"Comments":[]}
+{"id":450,"text":"Run desktop mode.","label":[[0,3,"COMMAND"],[4,16,"MODE"]],"Comments":[]}
+{"id":451,"text":"Activate double pinch click.","label":[[0,8,"COMMAND"],[9,21,"POSE"],[22,27,"ACTION"]],"Comments":[]}
+{"id":452,"text":"Begin driving mode.","label":[[0,5,"COMMAND"],[6,18,"MODE"]],"Comments":[]}
+{"id":453,"text":"Switch to force field.","label":[[0,6,"COMMAND"],[10,21,"MODE"]],"Comments":[]}
+{"id":454,"text":"Start gun move.","label":[[0,5,"COMMAND"],[6,14,"MODE"]],"Comments":[]}
+{"id":455,"text":"Activate head drive mode.","label":[[0,8,"COMMAND"],[9,24,"MODE"]],"Comments":[]}
+{"id":456,"text":"Run hit trigger mode.","label":[[0,3,"COMMAND"],[4,20,"MODE"]],"Comments":[]}
+{"id":457,"text":"Begin inking mode.","label":[[0,5,"COMMAND"],[6,17,"MODE"]],"Comments":[]}
+{"id":458,"text":"Switch to joystick mode.","label":[[0,6,"COMMAND"],[10,23,"MODE"]],"Comments":[]}
+{"id":459,"text":"Start minecraft elbows.","label":[[0,5,"COMMAND"],[6,22,"MODE"]],"Comments":[]}
+{"id":460,"text":"Activate mouse options.","label":[[0,8,"COMMAND"],[9,22,"MODE"]],"Comments":[]}
+{"id":461,"text":"Run navigation mode.","label":[[0,3,"COMMAND"],[4,19,"MODE"]],"Comments":[]}
+{"id":462,"text":"Begin nlp mode.","label":[[0,5,"COMMAND"],[6,14,"MODE"]],"Comments":[]}
+{"id":463,"text":"Switch to nose scroll.","label":[[0,6,"COMMAND"],[10,21,"MODE"]],"Comments":[]}
+{"id":464,"text":"Start pinch click mode.","label":[[0,5,"COMMAND"],[6,22,"MODE"]],"Comments":[]}
+{"id":465,"text":"Switch to scroll navigation.","label":[[0,6,"COMMAND"],[10,27,"MODE"]],"Comments":[]}
+{"id":466,"text":"Run rocket league.","label":[[0,3,"COMMAND"],[4,17,"MODE"]],"Comments":[]}
+{"id":467,"text":"I want to jump when I pose thumb down.","label":[[10,14,"ACTION"],[22,37,"POSE"]],"Comments":[]}
+{"id":468,"text":"start body points mode with my right hand.","label":[[0,5,"COMMAND"],[6,22,"MODE"],[31,36,"ORIENTATION"],[37,41,"LANDMARK"]],"Comments":[]}
+{"id":469,"text":"start desktop mode with my left hand.","label":[[0,5,"COMMAND"],[6,18,"MODE"],[27,31,"ORIENTATION"],[32,36,"LANDMARK"]],"Comments":[]}
+{"id":470,"text":"start desktop mode with my left hand to move the mouse and a left index pinch to left click.","label":[[0,5,"COMMAND"],[6,18,"MODE"],[27,31,"ORIENTATION"],[32,36,"LANDMARK"],[40,54,"POSE"],[61,65,"ORIENTATION"],[66,77,"POSE"],[81,91,"ACTION"]],"Comments":[]}
+{"id":471,"text":"I want to play rocket league and use my left elbow to left click.","label":[[10,14,"COMMAND"],[15,28,"MODE"],[40,44,"ORIENTATION"],[45,50,"LANDMARK"],[54,64,"ACTION"]],"Comments":[]}
+{"id":472,"text":"I want to play rocket league and use my right elbow to click space.","label":[[10,14,"COMMAND"],[15,28,"MODE"],[40,45,"ORIENTATION"],[46,51,"LANDMARK"],[55,66,"ACTION"]],"Comments":[]}
+{"id":473,"text":"Attach left click to my right elbow.","label":[[0,17,"ACTION"],[24,29,"ORIENTATION"],[30,35,"LANDMARK"]],"Comments":[]}
+{"id":474,"text":"Attach right click to me right elbow.","label":[[0,18,"ACTION"],[25,30,"ORIENTATION"],[31,36,"LANDMARK"]],"Comments":[]}
+{"id":475,"text":"Attach the mouse to my hand.","label":[[0,16,"ACTION"],[23,27,"LANDMARK"]],"Comments":[]}
+{"id":476,"text":"I want to play rocket league and move left with my left elbow.","label":[[10,14,"COMMAND"],[15,28,"MODE"],[33,42,"ACTION"],[51,55,"ORIENTATION"],[56,61,"LANDMARK"]],"Comments":[]}
+{"id":477,"text":"I want to play rocket league and move right with my right elbow.","label":[[10,14,"COMMAND"],[15,28,"MODE"],[33,43,"ACTION"],[52,57,"ORIENTATION"],[58,63,"LANDMARK"]],"Comments":[]}
+{"id":478,"text":"I want to play rocket league and press space with my right hand.","label":[[10,14,"COMMAND"],[15,28,"MODE"],[33,44,"ACTION"],[53,58,"ORIENTATION"],[59,63,"LANDMARK"]],"Comments":[]}
+{"id":479,"text":"play rocket league with my left hand to click the mouse.","label":[[0,4,"COMMAND"],[5,18,"MODE"],[27,31,"ORIENTATION"],[32,36,"LANDMARK"],[40,55,"ACTION"]],"Comments":[]}
+{"id":480,"text":"switch to rocket league and use my left hand to left click the mouse.","label":[[0,6,"COMMAND"],[10,23,"MODE"],[35,39,"ORIENTATION"],[40,44,"LANDMARK"],[48,68,"ACTION"]],"Comments":[]}
+{"id":481,"text":"activate rocket league and use my left hand to right click.","label":[[0,8,"COMMAND"],[9,22,"MODE"],[34,38,"ORIENTATION"],[39,43,"LANDMARK"],[47,58,"ACTION"]],"Comments":[]}
+{"id":482,"text":"Start rocket league and press shift with my right elbow.","label":[[0,5,"COMMAND"],[6,19,"MODE"],[24,35,"ACTION"],[44,49,"ORIENTATION"],[50,55,"LANDMARK"]],"Comments":[]}
+{"id":483,"text":"play minecraft and left click with my fist.","label":[[0,4,"COMMAND"],[5,14,"MODE"],[19,29,"ACTION"],[38,42,"POSE"]],"Comments":[]}
+{"id":484,"text":"play rocket league and right click with my left elbow.","label":[[0,4,"COMMAND"],[5,18,"MODE"],[23,34,"ACTION"],[43,47,"ORIENTATION"],[48,53,"LANDMARK"]],"Comments":[]}
+{"id":485,"text":"Play Minecraft with my right hand.","label":[[0,4,"COMMAND"],[5,14,"MODE"],[23,28,"ORIENTATION"],[29,33,"LANDMARK"]],"Comments":[]}
+{"id":486,"text":"Play Minecraft with my left hand.","label":[[0,4,"COMMAND"],[5,14,"MODE"],[23,27,"ORIENTATION"],[28,32,"LANDMARK"]],"Comments":[]}
+{"id":487,"text":"Start Minecraft using my right hand to control the mouse.","label":[[0,5,"COMMAND"],[6,15,"MODE"],[25,30,"ORIENTATION"],[31,35,"LANDMARK"],[39,56,"ACTION"]],"Comments":[]}
+{"id":488,"text":"Start Minecraft using my left hand to control the mouse.","label":[[0,5,"COMMAND"],[6,15,"MODE"],[25,29,"ORIENTATION"],[30,34,"LANDMARK"],[38,55,"ACTION"]],"Comments":[]}
+{"id":489,"text":"Start Minecraft using an index pinch to right click the mouse.","label":[[0,5,"COMMAND"],[6,15,"MODE"],[25,36,"POSE"],[40,61,"ACTION"]],"Comments":[]}
+{"id":490,"text":"Start Minecraft using an index pinch to left click the mouse.","label":[[0,5,"COMMAND"],[6,15,"MODE"],[25,36,"POSE"],[40,60,"ACTION"]],"Comments":[]}
+{"id":491,"text":"I want to play pokemon and walk up when I make a fist.","label":[[10,14,"COMMAND"],[15,22,"MODE"],[27,34,"ACTION"],[49,53,"POSE"]],"Comments":[]}
+{"id":492,"text":"I want to play pokemon and walk down when I make a fist.","label":[[10,14,"COMMAND"],[15,22,"MODE"],[27,36,"ACTION"],[51,55,"POSE"]],"Comments":[]}
+{"id":493,"text":"I want to play pokemon and walk left when I make a fist.","label":[[10,14,"COMMAND"],[15,22,"MODE"],[27,36,"ACTION"],[51,55,"POSE"]],"Comments":[]}
+{"id":494,"text":"I want to play pokemon and walk right when I make a fist.","label":[[10,14,"COMMAND"],[15,22,"MODE"],[27,37,"ACTION"],[52,56,"POSE"]],"Comments":[]}
+{"id":495,"text":"I want to play pokemon and walk up when I make a fist with my right hand.","label":[[10,14,"COMMAND"],[15,22,"MODE"],[27,34,"ACTION"],[49,53,"POSE"],[62,67,"ORIENTATION"],[68,72,"LANDMARK"]],"Comments":[]}
+{"id":496,"text":"I want to play pokemon and walk down when I make a fist with my right hand.","label":[[10,14,"COMMAND"],[15,22,"MODE"],[27,36,"ACTION"],[51,55,"POSE"],[64,69,"ORIENTATION"],[70,74,"LANDMARK"]],"Comments":[]}
+{"id":497,"text":"I want to play pokemon and walk left when I make a fist with my right hand.","label":[[10,14,"COMMAND"],[15,22,"MODE"],[27,36,"ACTION"],[51,55,"POSE"],[64,69,"ORIENTATION"],[70,74,"LANDMARK"]],"Comments":[]}
+{"id":498,"text":"I want to play pokemon and walk right when I make a fist with my right hand.","label":[[10,14,"COMMAND"],[15,22,"MODE"],[27,37,"ACTION"],[52,56,"POSE"],[65,70,"ORIENTATION"],[71,75,"LANDMARK"]],"Comments":[]}
+{"id":499,"text":"I want to play pokemon and walk up when I make a fist with my left hand.","label":[[10,14,"COMMAND"],[15,22,"MODE"],[27,34,"ACTION"],[49,53,"POSE"],[62,66,"ORIENTATION"],[67,71,"LANDMARK"]],"Comments":[]}
+{"id":500,"text":"I want to play pokemon and walk down when I make a fist with my left hand.","label":[[10,14,"COMMAND"],[15,22,"MODE"],[27,36,"ACTION"],[51,55,"POSE"],[64,68,"ORIENTATION"],[69,73,"LANDMARK"]],"Comments":[]}
+{"id":501,"text":"I want to play pokemon and walk left when I make a fist with my left hand.","label":[[10,14,"COMMAND"],[15,22,"MODE"],[27,36,"ACTION"],[51,55,"POSE"],[64,68,"ORIENTATION"],[69,73,"LANDMARK"]],"Comments":[]}
+{"id":502,"text":"I want to play pokemon and walk right when I make a fist with my left hand.","label":[[10,14,"COMMAND"],[15,22,"MODE"],[27,37,"ACTION"],[52,56,"POSE"],[65,69,"ORIENTATION"],[70,74,"LANDMARK"]],"Comments":[]}
+{"id":503,"text":"I want to play tetris and rotate the piece when I make a fist.","label":[[10,14,"COMMAND"],[15,21,"MODE"],[26,42,"ACTION"],[57,61,"POSE"]],"Comments":[]}
+{"id":504,"text":"I want to play tetris and move the piece left when I make a fist.","label":[[10,14,"COMMAND"],[15,21,"MODE"],[26,45,"ACTION"],[60,64,"POSE"]],"Comments":[]}
+{"id":505,"text":"I want to play tetris and move the piece right when I make a fist.","label":[[10,14,"COMMAND"],[15,21,"MODE"],[26,46,"ACTION"],[61,65,"POSE"]],"Comments":[]}
+{"id":506,"text":"I want to play tetris and move the piece down when I make a fist.","label":[[10,14,"COMMAND"],[15,21,"MODE"],[26,45,"ACTION"],[60,64,"POSE"]],"Comments":[]}
+{"id":507,"text":"I want to play tetris and hold the piece when I make a fist.","label":[[10,14,"COMMAND"],[15,21,"MODE"],[26,40,"ACTION"],[55,59,"POSE"]],"Comments":[]}
+{"id":508,"text":"I want to play tetris and drop the piece when I make a fist.","label":[[10,14,"COMMAND"],[15,21,"MODE"],[26,40,"ACTION"],[55,59,"POSE"]],"Comments":[]}
+{"id":509,"text":"I want to play tetris and save the piece when I make a fist with my right hand.","label":[[10,14,"COMMAND"],[15,21,"MODE"],[26,40,"ACTION"],[55,59,"POSE"],[68,73,"ORIENTATION"],[74,78,"LANDMARK"]],"Comments":[]}
+{"id":510,"text":"I want to play tetris and rotate the piece when I thwip with my right hand.","label":[[10,14,"COMMAND"],[15,21,"MODE"],[26,42,"ACTION"],[50,55,"POSE"],[64,69,"ORIENTATION"],[70,74,"LANDMARK"]],"Comments":[]}
+{"id":511,"text":"I want to play tetris and move the piece left when I thwip with my left hand.","label":[[10,14,"COMMAND"],[15,21,"MODE"],[26,45,"ACTION"],[53,58,"POSE"],[67,71,"ORIENTATION"],[72,76,"LANDMARK"]],"Comments":[]}
+{"id":512,"text":"I want to play tetris and move the piece right when I thwip with my left hand.","label":[[10,14,"COMMAND"],[15,21,"MODE"],[26,46,"ACTION"],[54,59,"POSE"],[68,72,"ORIENTATION"],[73,77,"LANDMARK"]],"Comments":[]}
+{"id":513,"text":"I want to play tetris and when I move my hand forward the piece moves down.","label":[[10,14,"COMMAND"],[15,21,"MODE"],[33,53,"POSE"],[58,74,"ACTION"]],"Comments":[]}
+{"id":514,"text":"I want to play tetris and when I move my hand back the piece moves up.","label":[[10,14,"COMMAND"],[15,21,"MODE"],[33,50,"POSE"],[55,69,"ACTION"]],"Comments":[]}
+{"id":515,"text":"I want to play tetris and when I pinch my thumb and index finger the piece rotates.","label":[[10,14,"COMMAND"],[15,21,"MODE"],[33,64,"POSE"],[69,82,"ACTION"]],"Comments":[]}
+{"id":516,"text":"I want to play tetris and when I do a peace sign the piece moves left.","label":[[10,14,"COMMAND"],[15,21,"MODE"],[38,48,"POSE"],[53,69,"ACTION"]],"Comments":[]}
+{"id":517,"text":"I want to play tetris and when I do a thumbs up the piece moves right.","label":[[10,14,"COMMAND"],[15,21,"MODE"],[38,47,"POSE"],[52,69,"ACTION"]],"Comments":[]}
+{"id":518,"text":"I want to play tetris and when I do a strong punch the piece holds.","label":[[10,14,"COMMAND"],[15,21,"MODE"],[38,50,"POSE"],[55,66,"ACTION"]],"Comments":[]}
+{"id":519,"text":"I want to play tetris and when I do a strong punch hold the piece.","label":[[10,14,"COMMAND"],[15,21,"MODE"],[38,50,"POSE"],[51,65,"ACTION"]],"Comments":[]}
+{"id":520,"text":"I want to play tetris and hold the piece when I do a thwip.","label":[[10,14,"COMMAND"],[15,21,"MODE"],[26,40,"ACTION"],[53,58,"POSE"]],"Comments":[]}
+{"id":521,"text":"I want to play tetris and when I hold three fingers up the piece drops.","label":[[10,14,"COMMAND"],[15,21,"MODE"],[33,51,"POSE"],[59,70,"ACTION"]],"Comments":[]}
+{"id":522,"text":"I want to play tetris and hold the piece when I lift my pinky finger.","label":[[10,14,"COMMAND"],[15,21,"MODE"],[26,40,"ACTION"],[48,68,"POSE"]],"Comments":[]}
+{"id":523,"text":"I want to play tetris and drop the piece when I lift my pinky finger.","label":[[10,14,"COMMAND"],[15,21,"MODE"],[26,40,"ACTION"],[48,68,"POSE"]],"Comments":[]}
+{"id":524,"text":"I want to play tetris and save the piece when I shoot a gun.","label":[[10,14,"COMMAND"],[15,21,"MODE"],[26,40,"ACTION"],[48,59,"POSE"]],"Comments":[]}
+{"id":525,"text":"I want to play tetris and rotate the piece when I do a gun pose.","label":[[10,14,"COMMAND"],[15,21,"MODE"],[26,42,"ACTION"],[55,63,"POSE"]],"Comments":[]}
+{"id":526,"text":"I want to play tetris and move the piece left when I do a gun pose.","label":[[10,14,"COMMAND"],[15,21,"MODE"],[26,45,"ACTION"],[58,66,"POSE"]],"Comments":[]}
+{"id":527,"text":"Start Tetris.","label":[[0,5,"COMMAND"],[6,12,"MODE"]],"Comments":[]}
+{"id":528,"text":"Start Tetris and when I make a fist rotate piece.","label":[[0,5,"COMMAND"],[6,12,"MODE"],[31,35,"POSE"],[36,48,"ACTION"]],"Comments":[]}
+{"id":529,"text":"Start Tetris and when I make a fist rotate the piece.","label":[[0,5,"COMMAND"],[6,12,"MODE"],[31,35,"POSE"],[36,52,"ACTION"]],"Comments":[]}
+{"id":530,"text":"Start Tetris and when I do a thumbs up release the piece.","label":[[0,5,"MODE"],[6,12,"MODE"],[29,38,"POSE"],[39,56,"ACTION"]],"Comments":[]}
+{"id":531,"text":"Start Tetris and when I do a thumbs up release piece.","label":[[0,5,"COMMAND"],[6,12,"MODE"],[29,38,"POSE"],[39,52,"ACTION"]],"Comments":[]}
+{"id":532,"text":"I want to play the dino game and when I pinch my thumb and index finger then jump.","label":[[10,14,"COMMAND"],[19,28,"MODE"],[40,71,"POSE"],[77,81,"ACTION"]],"Comments":[]}
+{"id":533,"text":"I want to play the dino game and when I pinch my thumb and index finger jump.","label":[[10,14,"COMMAND"],[19,28,"MODE"],[40,64,"POSE"],[72,76,"ACTION"]],"Comments":[]}
+{"id":534,"text":"I want to play dino game when I make a fist then crouch.","label":[[10,14,"COMMAND"],[15,24,"MODE"],[39,43,"POSE"],[49,55,"ACTION"]],"Comments":[]}
+{"id":535,"text":"I want to play dino game crouch when I make a fist.","label":[[10,14,"COMMAND"],[15,24,"MODE"],[25,31,"ACTION"],[46,50,"POSE"]],"Comments":[]}
+{"id":536,"text":"I want to play dino game please jump when when I Pinch my index and thumb.","label":[[10,14,"COMMAND"],[15,24,"MODE"],[32,36,"ACTION"],[49,73,"POSE"]],"Comments":[]}
+{"id":537,"text":"I want to play dino game jump when I pinch my index and thumb.","label":[[10,14,"COMMAND"],[15,24,"MODE"],[25,29,"ACTION"],[37,61,"POSE"]],"Comments":[]}
+{"id":538,"text":"I want to play dinosaur game.","label":[[10,14,"COMMAND"],[15,28,"MODE"]],"Comments":[]}
+{"id":539,"text":"Play Dino game.","label":[[0,4,"COMMAND"],[5,14,"MODE"]],"Comments":[]}
+{"id":540,"text":"play dinosaur game.","label":[[0,4,"COMMAND"],[5,18,"MODE"]],"Comments":[]}
+{"id":541,"text":"Open dino Game.","label":[[0,4,"COMMAND"],[5,14,"MODE"]],"Comments":[]}
+{"id":542,"text":"Open Dinosaur game and when I make a fist then crouch.","label":[[0,4,"COMMAND"],[5,18,"MODE"],[37,41,"POSE"],[47,53,"ACTION"]],"Comments":[]}
+{"id":543,"text":"Open Dinosaur game and when I pinch my Index finger then Jump.","label":[[0,4,"COMMAND"],[5,18,"MODE"],[30,51,"POSE"],[57,61,"ACTION"]],"Comments":[]}
+{"id":544,"text":"Open Dinosaur game and when I make a three finger pinch Jump.","label":[[0,4,"COMMAND"],[5,18,"MODE"],[37,55,"POSE"],[56,60,"ACTION"]],"Comments":[]}
+{"id":545,"text":"Open Dinosaur game when I make a three finger pinch Jump.","label":[[0,4,"COMMAND"],[5,18,"MODE"],[33,51,"POSE"],[52,56,"ACTION"]],"Comments":[]}
+{"id":546,"text":"Open Dinosaur game Jump when I make a three finger pinch.","label":[[0,4,"COMMAND"],[5,18,"MODE"],[19,23,"ACTION"],[38,56,"POSE"]],"Comments":[]}
+{"id":547,"text":"Play Dinosaur game and when I make a fist then crouch.","label":[[0,4,"COMMAND"],[5,18,"MODE"],[37,41,"POSE"],[47,53,"ACTION"]],"Comments":[]}
+{"id":548,"text":"Play Dinosaur game and when I pinch my Index finger then Jump.","label":[[0,4,"COMMAND"],[5,18,"MODE"],[30,51,"POSE"],[57,61,"ACTION"]],"Comments":[]}
+{"id":549,"text":"Play Dinosaur game and when I make a three finger pinch Jump.","label":[[0,4,"COMMAND"],[5,18,"MODE"],[37,55,"POSE"],[56,60,"ACTION"]],"Comments":[]}
+{"id":550,"text":"Play Dinosaur game when I make a three finger pinch Jump.","label":[[0,4,"COMMAND"],[5,18,"MODE"],[33,51,"POSE"],[52,56,"ACTION"]],"Comments":[]}
+{"id":551,"text":"Play Dinosaur game Jump when I make a three finger pinch.","label":[[0,4,"COMMAND"],[5,18,"MODE"],[19,23,"ACTION"],[38,56,"POSE"]],"Comments":[]}
+{"id":552,"text":"Start Dinosaur game and when I make a fist then crouch.","label":[[0,5,"COMMAND"],[6,19,"MODE"],[38,42,"POSE"],[48,54,"ACTION"]],"Comments":[]}
+{"id":553,"text":"Start Dinosaur game and when I pinch my Index finger then Jump.","label":[[0,5,"COMMAND"],[6,19,"MODE"],[31,52,"POSE"],[58,62,"ACTION"]],"Comments":[]}
+{"id":554,"text":"Start Dinosaur game and when I make a three finger pinch Jump.","label":[[0,5,"COMMAND"],[6,19,"MODE"],[38,56,"POSE"],[57,61,"ACTION"]],"Comments":[]}
+{"id":555,"text":"Start Dinosaur game when I make a three finger pinch Jump.","label":[[0,5,"COMMAND"],[6,19,"MODE"],[34,52,"POSE"],[53,57,"ACTION"]],"Comments":[]}
+{"id":556,"text":"Start Dinosaur game Jump when I make a three finger pinch.","label":[[0,5,"COMMAND"],[6,19,"MODE"],[20,24,"ACTION"],[39,57,"POSE"]],"Comments":[]}
+{"id":557,"text":"Move up when I point up.","label":[[0,7,"ACTION"],[15,23,"POSE"]],"Comments":[]}
+{"id":558,"text":"Move up when I point up with two fingers.","label":[[0,7,"ACTION"],[15,40,"POSE"]],"Comments":[]}
+{"id":559,"text":"Move up when I make a peace sign.","label":[[0,7,"ACTION"],[22,32,"POSE"]],"Comments":[]}
+{"id":560,"text":"Go up when I point up.","label":[[0,5,"ACTION"],[13,21,"POSE"]],"Comments":[]}
+{"id":561,"text":"Go up when I point up with two fingers.","label":[[0,5,"ACTION"],[27,38,"POSE"]],"Comments":[]}
+{"id":562,"text":"Go up when I make a peace sign.","label":[[0,5,"ACTION"],[20,30,"POSE"]],"Comments":[]}
+{"id":563,"text":"Walk up when I point up.","label":[[0,7,"ACTION"],[15,23,"POSE"]],"Comments":[]}
+{"id":564,"text":"Walk up when I point up with two fingers.","label":[[0,7,"ACTION"],[15,40,"POSE"]],"Comments":[]}
+{"id":565,"text":"Walk up when I make a peace sign.","label":[[0,7,"ACTION"],[22,32,"POSE"]],"Comments":[]}
+{"id":566,"text":"Move down when I pinch.","label":[[0,9,"ACTION"],[17,22,"POSE"]],"Comments":[]}
+{"id":567,"text":"Move down when I do an Index Pinch.","label":[[0,9,"ACTION"],[23,34,"POSE"]],"Comments":[]}
+{"id":568,"text":"Move down when I do a three finger pinch.","label":[[0,9,"ACTION"],[22,40,"POSE"]],"Comments":[]}
+{"id":569,"text":"Move down when I pinch with three fingers.","label":[[0,9,"ACTION"],[17,41,"POSE"]],"Comments":[]}
+{"id":570,"text":"Move down on an Index Pinch.","label":[[0,9,"ACTION"],[16,27,"POSE"]],"Comments":[]}
+{"id":571,"text":"Move down on a thumb and index finger pinch.","label":[[0,9,"ACTION"],[15,43,"POSE"]],"Comments":[]}
+{"id":572,"text":"Move down on a thumb and index pinch.","label":[[0,9,"ACTION"],[15,36,"POSE"]],"Comments":[]}
+{"id":573,"text":"Go down when I pinch.","label":[[0,7,"ACTION"],[15,20,"POSE"]],"Comments":[]}
+{"id":574,"text":"Go down when I do an Index Pinch.","label":[[0,7,"ACTION"],[21,32,"POSE"]],"Comments":[]}
+{"id":575,"text":"Go down when I do a three finger pinch.","label":[[0,7,"ACTION"],[20,38,"POSE"]],"Comments":[]}
+{"id":576,"text":"Go down when I pinch with three fingers.","label":[[0,7,"ACTION"],[15,39,"POSE"]],"Comments":[]}
+{"id":577,"text":"Go down on an Index Pinch.","label":[[0,7,"ACTION"],[14,25,"POSE"]],"Comments":[]}
+{"id":578,"text":"Go down on a thumb and index finger pinch.","label":[[0,7,"ACTION"],[13,41,"POSE"]],"Comments":[]}
+{"id":579,"text":"Go down on a thumb and index pinch.","label":[[0,7,"ACTION"],[13,34,"POSE"]],"Comments":[]}
+{"id":580,"text":"Walk down when I pinch.","label":[[0,9,"ACTION"],[17,22,"POSE"]],"Comments":[]}
+{"id":581,"text":"Walk down when I do an Index Pinch.","label":[[0,9,"ACTION"],[23,34,"POSE"]],"Comments":[]}
+{"id":582,"text":"Walk down when I do a three finger pinch.","label":[[0,9,"ACTION"],[22,40,"POSE"]],"Comments":[]}
+{"id":583,"text":"Walk down when I pinch with three fingers.","label":[[0,9,"ACTION"],[17,41,"POSE"]],"Comments":[]}
+{"id":584,"text":"Walk down on an Index Pinch.","label":[[0,9,"ACTION"],[16,27,"POSE"]],"Comments":[]}
+{"id":585,"text":"Walk down on a thumb and index finger pinch.","label":[[0,9,"ACTION"],[15,43,"POSE"]],"Comments":[]}
+{"id":586,"text":"Walk down on a thumb and index pinch.","label":[[0,9,"ACTION"],[15,36,"POSE"]],"Comments":[]}
+{"id":587,"text":"Move left when I open my thumb.","label":[[0,9,"ACTION"],[17,30,"POSE"]],"Comments":[]}
+{"id":588,"text":"Move left when I release my thumb.","label":[[0,9,"ACTION"],[17,33,"POSE"]],"Comments":[]}
+{"id":589,"text":"Move left when I make a thumbs up.","label":[[0,9,"ACTION"],[24,33,"POSE"]],"Comments":[]}
+{"id":590,"text":"Go left when I open my thumb.","label":[[0,7,"ACTION"],[15,28,"POSE"]],"Comments":[]}
+{"id":591,"text":"Go left when I release my thumb.","label":[[0,7,"ACTION"],[15,31,"POSE"]],"Comments":[]}
+{"id":592,"text":"Go left when I make a thumbs up.","label":[[0,7,"ACTION"],[22,31,"POSE"]],"Comments":[]}
+{"id":593,"text":"Walk left when I open my thumb.","label":[[0,9,"ACTION"],[17,30,"POSE"]],"Comments":[]}
+{"id":594,"text":"Walk left when I release my thumb.","label":[[0,9,"ACTION"],[17,33,"POSE"]],"Comments":[]}
+{"id":595,"text":"Walk left when I make a thumbs up.","label":[[0,9,"ACTION"],[24,33,"POSE"]],"Comments":[]}
+{"id":596,"text":"Move right when I open my pinky.","label":[[0,10,"ACTION"],[26,31,"POSE"]],"Comments":[]}
+{"id":597,"text":"Move right when I release my pinky.","label":[[0,10,"ACTION"],[18,34,"POSE"]],"Comments":[]}
+{"id":598,"text":"Move right when I pinky is up.","label":[[0,10,"ACTION"],[18,29,"POSE"]],"Comments":[]}
+{"id":599,"text":"Go right when I open my pinky.","label":[[0,8,"ACTION"],[16,29,"POSE"]],"Comments":[]}
+{"id":600,"text":"Go right when I release my pinky.","label":[[0,8,"ACTION"],[16,32,"POSE"]],"Comments":[]}
+{"id":601,"text":"Go right when I pinky is up.","label":[[0,8,"ACTION"],[16,27,"POSE"]],"Comments":[]}
+{"id":602,"text":"Walk right when I open my pinky.","label":[[0,10,"ACTION"],[18,31,"POSE"]],"Comments":[]}
+{"id":603,"text":"Walk right when I release my pinky.","label":[[0,10,"ACTION"],[18,34,"POSE"]],"Comments":[]}
+{"id":604,"text":"Walk right when pinky is up.","label":[[0,10,"ACTION"],[16,27,"POSE"]],"Comments":[]}
+{"id":605,"text":"Walk right when my pinky is up.","label":[[0,10,"ACTION"],[19,30,"POSE"]],"Comments":[]}
+{"id":606,"text":"Move left when I open my thumb with my right hand.","label":[[0,9,"ACTION"],[17,30,"POSE"],[39,44,"ORIENTATION"],[45,49,"LANDMARK"]],"Comments":[]}
+{"id":607,"text":"Move left when I release my thumb with my right hand.","label":[[0,9,"ACTION"],[17,33,"POSE"],[42,47,"ORIENTATION"],[48,52,"LANDMARK"]],"Comments":[]}
+{"id":608,"text":"Move left when I make a thumbs up with my right hand.","label":[[0,9,"ACTION"],[24,33,"POSE"],[42,47,"ORIENTATION"],[48,52,"LANDMARK"]],"Comments":[]}
+{"id":609,"text":"Go left when I open my thumb with my right hand.","label":[[0,7,"ACTION"],[15,28,"POSE"],[37,42,"ORIENTATION"],[43,47,"LANDMARK"]],"Comments":[]}
+{"id":610,"text":"Go left when I release my thumb with my right hand.","label":[[0,7,"ACTION"],[15,31,"POSE"],[40,45,"ORIENTATION"],[46,50,"LANDMARK"]],"Comments":[]}
+{"id":611,"text":"Go left when I make a thumbs up with my right hand.","label":[[0,7,"ACTION"],[22,31,"POSE"],[40,45,"ORIENTATION"],[46,50,"LANDMARK"]],"Comments":[]}
+{"id":612,"text":"Walk left when I open my thumb with my right hand.","label":[[0,9,"ACTION"],[17,30,"POSE"],[39,44,"ORIENTATION"],[45,49,"LANDMARK"]],"Comments":[]}
+{"id":613,"text":"Walk left when I release my thumb with my right hand.","label":[[0,9,"ACTION"],[17,33,"POSE"],[42,47,"ORIENTATION"],[48,52,"LANDMARK"]],"Comments":[]}
+{"id":614,"text":"Walk left when I make a thumbs up with my right hand.","label":[[0,9,"ACTION"],[24,33,"POSE"],[42,47,"ORIENTATION"],[48,52,"LANDMARK"]],"Comments":[]}
+{"id":615,"text":"Move right when I open my pinky with my right hand.","label":[[0,10,"ACTION"],[18,31,"POSE"],[40,45,"ORIENTATION"],[46,50,"LANDMARK"]],"Comments":[]}
+{"id":616,"text":"Move right when I release my pinky with my right hand.","label":[[0,10,"ACTION"],[18,34,"POSE"],[43,48,"ORIENTATION"],[49,53,"POSE"]],"Comments":[]}
+{"id":617,"text":"Move right when I pinky is up with my right hand.","label":[[0,10,"ACTION"],[18,29,"POSE"],[38,43,"ORIENTATION"],[44,48,"LANDMARK"]],"Comments":[]}
+{"id":618,"text":"Go right when I open my pinky with my right hand.","label":[[0,8,"ACTION"],[16,29,"POSE"],[38,43,"ORIENTATION"],[44,48,"LANDMARK"]],"Comments":[]}
+{"id":619,"text":"Go right when I release my pinky with my right hand.","label":[[0,8,"ACTION"],[16,32,"POSE"],[41,46,"ORIENTATION"],[47,51,"LANDMARK"]],"Comments":[]}
+{"id":620,"text":"Go right when I pinky is up with my right hand.","label":[[0,8,"ACTION"],[16,27,"POSE"],[36,41,"ORIENTATION"],[42,46,"LANDMARK"]],"Comments":[]}
+{"id":621,"text":"Walk right when I open my pinky with my right hand.","label":[[0,10,"ACTION"],[18,31,"POSE"],[40,45,"ORIENTATION"],[46,50,"LANDMARK"]],"Comments":[]}
+{"id":622,"text":"Walk right when I release my pinky with my right hand.","label":[[0,10,"ACTION"],[18,34,"POSE"],[43,48,"ORIENTATION"],[49,53,"LANDMARK"]],"Comments":[]}
+{"id":623,"text":"Walk right when pinky is up with my right hand.","label":[[0,10,"ACTION"],[16,27,"POSE"],[36,41,"ORIENTATION"],[42,46,"LANDMARK"]],"Comments":[]}
+{"id":624,"text":"Walk right when my pinky is up with my right hand.","label":[[0,10,"ACTION"],[19,30,"POSE"],[39,44,"ORIENTATION"],[45,49,"LANDMARK"]],"Comments":[]}
+{"id":625,"text":"Move right when I open my thumb with my left hand.","label":[[0,10,"ACTION"],[18,31,"POSE"],[40,44,"ORIENTATION"],[45,49,"LANDMARK"]],"Comments":[]}
+{"id":626,"text":"Move right when I release my thumb with my left hand.","label":[[0,10,"ACTION"],[18,34,"POSE"],[43,47,"ORIENTATION"],[48,52,"LANDMARK"]],"Comments":[]}
+{"id":627,"text":"Move right when I make a thumbs up with my left hand.","label":[[0,10,"ACTION"],[25,34,"POSE"],[43,47,"ORIENTATION"],[48,52,"LANDMARK"]],"Comments":[]}
+{"id":628,"text":"Go right when I open my thumb with my left hand.","label":[[0,8,"ACTION"],[16,29,"POSE"],[38,42,"ORIENTATION"],[43,47,"LANDMARK"]],"Comments":[]}
+{"id":629,"text":"Go right when I release my thumb with my left hand.","label":[[0,8,"ACTION"],[16,32,"POSE"],[41,45,"ORIENTATION"],[46,50,"LANDMARK"]],"Comments":[]}
+{"id":630,"text":"Go right when I make a thumbs up with my left hand.","label":[[0,8,"ACTION"],[23,32,"POSE"],[41,45,"ORIENTATION"],[46,50,"LANDMARK"]],"Comments":[]}
+{"id":631,"text":"Walk right when I open my thumb with my left hand.","label":[[0,10,"ACTION"],[18,31,"POSE"],[40,44,"ORIENTATION"],[45,49,"LANDMARK"]],"Comments":[]}
+{"id":632,"text":"Walk right when I release my thumb with left hand.","label":[[0,10,"ACTION"],[18,34,"POSE"],[40,44,"ORIENTATION"],[45,49,"LANDMARK"]],"Comments":[]}
+{"id":633,"text":"Walk right when I make a thumbs up with left hand.","label":[[0,10,"ACTION"],[25,34,"POSE"],[40,44,"ORIENTATION"],[45,49,"LANDMARK"]],"Comments":[]}
+{"id":634,"text":"Move left when I open my pinky with my left hand.","label":[[0,9,"ACTION"],[17,30,"POSE"],[39,43,"ORIENTATION"],[44,48,"LANDMARK"]],"Comments":[]}
+{"id":635,"text":"Move left when I release my pinky with my left hand.","label":[[0,9,"ACTION"],[17,33,"POSE"],[42,46,"ORIENTATION"],[47,51,"LANDMARK"]],"Comments":[]}
+{"id":636,"text":"Move left when I pinky is up with my left hand.","label":[[0,9,"ACTION"],[17,28,"POSE"],[37,41,"ORIENTATION"],[42,46,"LANDMARK"]],"Comments":[]}
+{"id":637,"text":"Go left when I open my pinky with my left hand.","label":[[0,7,"ACTION"],[15,28,"POSE"],[37,41,"ORIENTATION"],[42,46,"LANDMARK"]],"Comments":[]}
+{"id":638,"text":"Go left when I release my pinky with my left hand.","label":[[0,7,"ACTION"],[15,31,"POSE"],[40,44,"ORIENTATION"],[45,49,"LANDMARK"]],"Comments":[]}
+{"id":639,"text":"Go left when I pinky is up with my left hand.","label":[[0,7,"ACTION"],[15,26,"POSE"],[35,39,"ORIENTATION"],[40,44,"LANDMARK"]],"Comments":[]}
+{"id":640,"text":"Walk left when I open my pinky with my left hand.","label":[[0,9,"ACTION"],[17,30,"POSE"],[39,43,"ORIENTATION"],[44,48,"LANDMARK"]],"Comments":[]}
+{"id":641,"text":"Walk left when I release my pinky with my left hand.","label":[[0,9,"ACTION"],[17,33,"POSE"],[42,46,"ORIENTATION"],[47,51,"LANDMARK"]],"Comments":[]}
+{"id":642,"text":"Walk left when pinky is up with my left hand.","label":[[0,9,"ACTION"],[15,26,"POSE"],[35,39,"ORIENTATION"],[40,44,"LANDMARK"]],"Comments":[]}
+{"id":643,"text":"Walk left when my pinky is up with my left hand.","label":[[0,9,"ACTION"],[18,29,"POSE"],[38,42,"ORIENTATION"],[43,47,"LANDMARK"]],"Comments":[]}
+{"id":644,"text":"Control the mouse with my hand.","label":[[0,17,"POSE"],[26,30,"LANDMARK"]],"Comments":[]}
+{"id":645,"text":"Control the mouse with my left hand.","label":[[0,17,"POSE"],[26,30,"ORIENTATION"],[31,35,"LANDMARK"]],"Comments":[]}
+{"id":646,"text":"Control the mouse with my right hand.","label":[[0,17,"POSE"],[26,31,"ORIENTATION"],[32,36,"LANDMARK"]],"Comments":[]}
+{"id":647,"text":"Control the mouse with my wrist.","label":[[0,17,"POSE"],[26,31,"LANDMARK"]],"Comments":[]}
+{"id":648,"text":"Control the mouse with my right wrist.","label":[[0,17,"POSE"],[26,31,"ORIENTATION"],[32,37,"LANDMARK"]],"Comments":[]}
+{"id":649,"text":"Control the mouse with my left wrist.","label":[[0,17,"POSE"],[26,30,"ORIENTATION"],[31,36,"LANDMARK"]],"Comments":[]}
+{"id":650,"text":"Control the mouse with my elbow.","label":[[0,17,"POSE"],[26,31,"LANDMARK"]],"Comments":[]}
+{"id":651,"text":"Control the mouse with my right elbow.","label":[[0,17,"POSE"],[26,31,"ORIENTATION"],[32,37,"LANDMARK"]],"Comments":[]}
+{"id":652,"text":"Control the mouse with my left elbow.","label":[[0,17,"POSE"],[26,30,"ORIENTATION"],[31,36,"LANDMARK"]],"Comments":[]}
+{"id":653,"text":"Control the mouse with my nose.","label":[[0,17,"POSE"],[26,30,"LANDMARK"]],"Comments":[]}

@@ -60,7 +60,7 @@ def train_and_save_model(train_data, model_name='all-MiniLM-L6-v2', output_dir='
 # Main function to run the training process
 if __name__ == "__main__":
     # Provide the path to your CSV file here
-    csv_file_path = 'transformer_sentences.csv'
+    csv_file_path = 'train_test_data/transformer_sentences.csv'
 
     # Load training data from the CSV file
     train_examples = load_data_from_csv(csv_file_path)

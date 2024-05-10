@@ -1,0 +1,12 @@
+sentence1,sentence2,label
+"control the mouse with my hand", "hand mouse", 0.95
+"attach the mouse to my hand", "hand mouse", 0.95
+"attach the mouse to my elbow", "hand mouse", 0.1
+"control the mouse with my elbow", "body mouse", 0.9
+"attach the mouse to my elbow", "body mouse", 0.9
+"attach the mouse to my right wrist", "body mouse", 0.9
+"attach the mouse", "body mouse", 0.85
+"control the mouse", "body mouse", 0.85
+"strong punch", "punch heavy", 0.9
+"lift my pinky finger", "pinky lift", 0.9
+"lift my pinkie finger", "pinky lift", 0.9

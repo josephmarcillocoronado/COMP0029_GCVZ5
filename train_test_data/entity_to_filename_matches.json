@@ -1,0 +1,10 @@
+{
+    "fist": {
+        "best_match": "fist",
+        "cosine_similarity": 1.0000001192092896
+    },
+    "index pinch": {
+        "best_match": "index pinch",
+        "cosine_similarity": 1.0
+    }
+}

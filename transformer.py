@@ -1,166 +1,127 @@
 import os
 import json
-import spacy
 from sentence_transformers import SentenceTransformer, util
-from entity_matchers import Matchers
-from test_data import TEST_DATA
+
 
 class NamedEntityMatcher:
     """
-    A class to match named entities to the most similar file names using a Sentence Transformer model.
+    A class to match named entities to the most similar file names and controls using a Sentence Transformer model.
     """
-    def __init__(self, model_path='transformer_model', json_dir=None):
+
+    def __init__(self, model_path='transformer_model', similarity_threshold=0.8):
         """
         Initialize the NamedEntityMatcher class.
 
         Parameters:
         - model_path (str): Path to the fine-tuned model directory to use.
-        - json_dir (str): Directory path containing the JSON files to compare. Defaults to None.
+        - similarity_threshold (float): Minimum cosine similarity score for a match to be considered.
         """
         self.model = SentenceTransformer(model_path)  # Load the fine-tuned model
-        self.json_dir = json_dir
-        self.json_files = []
-        if json_dir:
-            self.json_files = self._load_json_files(json_dir)
+        self.similarity_threshold = similarity_threshold
 
-    def set_json_directory(self, json_dir):
+    def find_best_match(self, entity_embeddings, target_embeddings):
         """
-        Set or change the directory containing JSON files.
-
-        Parameters:
-        - json_dir (str): Directory path containing JSON files.
-        """
-        self.json_dir = json_dir
-        self.json_files = self._load_json_files(json_dir)
-
-    def _load_json_files(self, json_dir):
-        """
-        Load and clean file names from the JSON directory.
-
-        Parameters:
-        - json_dir (str): Directory containing JSON files.
-
-        Returns:
-        - A list of cleaned JSON file names.
-        """
-        def clean_filename(filename):
-            base_name = os.path.splitext(filename)[0]  # Strip off the extension
-            clean_name = base_name.replace('_', ' ')  # Replace underscores with spaces
-            return clean_name
-
-        return [clean_filename(f) for f in os.listdir(json_dir) if f.endswith('.json')]
-
-    def find_best_match(self, entity_embeddings, file_name_embeddings):
-        """
-        Find the best match for each entity embedding against the file name embeddings.
+        Find the best match for each entity embedding against the target embeddings.
 
         Parameters:
         - entity_embeddings (tensor): Embeddings of the entities.
-        - file_name_embeddings (tensor): Embeddings of the JSON file names.
+        - target_embeddings (tensor): Embeddings of the target items (file names or controls).
 
         Returns:
         - A dictionary mapping each entity index to a tuple containing the best matching index and cosine similarity score.
         """
         results = {}
         for idx, entity_embedding in enumerate(entity_embeddings):
-            cosine_similarities = util.cos_sim(entity_embedding, file_name_embeddings)
+            cosine_similarities = util.cos_sim(entity_embedding, target_embeddings)
             best_match_idx = cosine_similarities.argmax()
             best_score = float(cosine_similarities[0, best_match_idx])  # Convert tensor to float
-            results[idx] = (best_match_idx, best_score)
+
+            # Only consider matches that meet or exceed the similarity threshold
+            if best_score >= self.similarity_threshold:
+                results[idx] = (best_match_idx, best_score)
 
         return results
 
-    def match_entities_to_files(self, named_entities):
+    def load_controls_from_json(self, directory, mode_name):
         """
-        Match named entities to the most similar JSON file names.
+        Load control values from a specific JSON file representing the mode.
 
         Parameters:
-        - named_entities (list of str): List of named entities to compare against JSON file names.
+        - directory (str): Path to the directory containing the mode file.
+        - mode_name (str): The base name of the mode file to load.
 
         Returns:
-        - A dictionary mapping each named entity to a tuple containing the best matching JSON file name and its cosine similarity score.
+        - List of control values from the specified mode file.
         """
-        if not self.json_files:
-            raise ValueError("No JSON files loaded for comparison.")
+        json_file_path = os.path.join(directory, f"{mode_name}.json")
+        if not os.path.exists(json_file_path):
+            raise ValueError(f"JSON file for mode '{mode_name}' does not exist in the directory.")
 
-        # Encode the JSON file names using the model
-        file_name_embeddings = self.model.encode(self.json_files, convert_to_tensor=True)
+        with open(json_file_path, 'r') as f:
+            data = json.load(f)
 
-        # Encode the provided named entities
-        entity_embeddings = self.model.encode(named_entities, convert_to_tensor=True)
+        return [pose['control'] for pose in data.get('poses', [])]
 
-        # Find the best match for each entity
-        match_indices = self.find_best_match(entity_embeddings, file_name_embeddings)
-
-        # Map indices back to their corresponding entity names and JSON file names
-        results = {named_entities[entity_idx]: (self.json_files[best_match_idx], score)
-                   for entity_idx, (best_match_idx, score) in match_indices.items()}
-
-        return results
-
-    def save_results(self, results, output_file='entity_to_filename_matches.json'):
+    def match_actions_to_controls(self, directory, mode_name, actions):
         """
-        Save the matching results to a JSON file.
+        Match action entities to the most similar control values in a specific JSON file.
 
         Parameters:
-        - results (dict): Dictionary containing the results to save.
-        - output_file (str): The path to the output JSON file.
+        - directory (str): Path to the directory containing the mode file.
+        - mode_name (str): The base name of the mode file to compare against.
+        - actions (list of str): List of actions to compare against control values.
+
+        Returns:
+        - A dictionary mapping each action to a tuple containing the best matching control and its cosine similarity score.
         """
-        # Convert results to a dictionary suitable for JSON
-        results_dict = {entity: {"best_match": match, "cosine_similarity": score}
-                        for entity, (match, score) in results.items()}
+        all_controls = self.load_controls_from_json(directory, mode_name)
+        if not all_controls:
+            raise ValueError(f"No control values found in the JSON file for mode '{mode_name}'.")
 
-        with open(output_file, 'w') as f:
-            json.dump(results_dict, f, indent=4)
+        # Encode the control values using the model
+        control_embeddings = self.model.encode(all_controls, convert_to_tensor=True)
 
-        print(f'Results written to {output_file}')
+        # Encode the provided actions
+        action_embeddings = self.model.encode(actions, convert_to_tensor=True)
 
+        # Find the best match for each action
+        match_indices = self.find_best_match(action_embeddings, control_embeddings)
 
-def load_and_run_ner(nlp_model_dir, test_data, entity_label='POSE'):
-    """
-    Load the NER model and run it on the provided test data to identify entities with the specified label.
+        # Map indices back to their corresponding action names and control values
+        results = {actions[action_idx]: (all_controls[control_idx], score)
+                   for action_idx, (control_idx, score) in match_indices.items()}
 
-    Parameters:
-    - nlp_model_dir (str): Path to the directory containing the NER model.
-    - test_data (list of tuples): List of sentences to process, ignoring the annotations.
-    - entity_label (str): The target entity label to search for (default is "POSE").
-
-    Returns:
-    - A list of named entities extracted from the test data with the specified label.
-    """
-    # Load the pre-trained NER model using spaCy
-    nlp = spacy.load(nlp_model_dir)
-
-    # Extract all named entities matching the specified label from the test data
-    entities = []
-    for sentence, _ in test_data:
-        doc = nlp(sentence)
-        for ent in doc.ents:
-            if ent.label_ == entity_label:
-                entities.append(ent.text)
-
-    return entities
+        return results
 
 
 if __name__ == "__main__":
-    # Define the path to the NER model directory
-    nlp_model_dir = 'nlp_model'
+    model_path = 'transformer_model'
 
-    # Load the NER model and identify entities with the "POSE" label from the test data
-    named_entities = load_and_run_ner(nlp_model_dir, TEST_DATA)
+    # Instantiate the NamedEntityMatcher with the model
+    matcher = NamedEntityMatcher(model_path=model_path, similarity_threshold=0.8)
 
-    # Instantiate the NamedEntityMatcher with the fine-tuned model
-    matcher = NamedEntityMatcher(model_path='transformer_model')
+    # Case 1: Match actions to controls in a mode file located in the "modes" directory
+    mode_directory = 'modes'
+    mode_name = 'tetris'
+    actions = ['move left', 'hold piece', 'rotate']
 
-    # Set the JSON directory to load
-    matcher.set_json_directory('poses/json')
+    # Match actions to the controls in the specified mode file
+    mode_action_results = matcher.match_actions_to_controls(mode_directory, mode_name, actions)
 
-    # Match the entities labeled "POSE" to the JSON files
-    results = matcher.match_entities_to_files(named_entities)
+    # Print results for actions in "modes" directory
+    print("\nResults for mode actions in 'modes' directory:")
+    for action, (match, score) in mode_action_results.items():
+        print(f"Action: {action} -> Best matching control: {match}, Cosine similarity: {score:.4f}")
 
-    # Print results to the console, including cosine similarity
-    for entity, (match, score) in results.items():
-        print(f"Named entity: {entity} -> Best matching file name: {match}, Cosine similarity: {score:.4f}")
+    # Case 2: Match actions to controls in a mode file located in the "poses/json" directory
+    poses_directory = 'poses/json'
+    poses_name = 'yoga'
+    poses_actions = ['warrior', 'mountain', 'downward dog']
 
-    # Save the results to a JSON file
-    matcher.save_results(results)
+    # Match actions to the controls in the specified poses file
+    poses_action_results = matcher.match_actions_to_controls(poses_directory, poses_name, poses_actions)
+
+    # Print results for actions in "poses/json" directory
+    print("\nResults for pose actions in 'poses/json' directory:")
+    for action, (match, score) in poses_action_results.items():
+        print(f"Action: {action} -> Best matching control: {match}, Cosine similarity: {score:.4f}")

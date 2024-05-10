@@ -1,0 +1,127 @@
+Start Tetris.
+Start Tetris and when I make a fist rotate piece.
+Start Tetris and when I make a fist rotate the piece.
+Start Tetris and when I do a thumbs up release the piece.
+Start Tetris and when I do a thumbs up release piece.
+I want to play the dino game and when I pinch my thumb and index finger then jump.
+I want to play the dino game and when I pinch my thumb and index finger jump.
+I want to play dino game when I make a fist then crouch.
+I want to play dino game crouch when I make a fist.
+I want to play dino game please jump when when I Pinch my index and thumb.
+I want to play dino game jump when I pinch my index and thumb.
+I want to play dinosaur game.
+Play Dino game.
+play dinosaur game.
+Open dino Game.
+Open Dinosaur game and when I make a fist then crouch.
+Open Dinosaur game and when I pinch my Index finger then Jump.
+Open Dinosaur game and when I make a three finger pinch Jump.
+Open Dinosaur game when I make a three finger pinch Jump.
+Open Dinosaur game Jump when I make a three finger pinch.
+Play Dinosaur game and when I make a fist then crouch.
+Play Dinosaur game and when I pinch my Index finger then Jump.
+Play Dinosaur game and when I make a three finger pinch Jump.
+Play Dinosaur game when I make a three finger pinch Jump.
+Play Dinosaur game Jump when I make a three finger pinch.
+Start Dinosaur game and when I make a fist then crouch.
+Start Dinosaur game and when I pinch my Index finger then Jump.
+Start Dinosaur game and when I make a three finger pinch Jump.
+Start Dinosaur game when I make a three finger pinch Jump.
+Start Dinosaur game Jump when I make a three finger pinch.
+Move up when I point up.
+Move up when I point up with two fingers.
+Move up when I make a peace sign.
+Go up when I point up.
+Go up when I point up with two fingers.
+Go up when I make a peace sign.
+Walk up when I point up.
+Walk up when I point up with two fingers.
+Walk up when I make a peace sign.
+Move down when I pinch.
+Move down when I do an Index Pinch.
+Move down when I do a three finger pinch.
+Move down when I pinch with three fingers.
+Move down on an Index Pinch.
+Move down on a thumb and index finger pinch.
+Move down on a thumb and index pinch.
+Go down when I pinch.
+Go down when I do an Index Pinch.
+Go down when I do a three finger pinch.
+Go down when I pinch with three fingers.
+Go down on an Index Pinch.
+Go down on a thumb and index finger pinch.
+Go down on a thumb and index pinch.
+Walk down when I pinch.
+Walk down when I do an Index Pinch.
+Walk down when I do a three finger pinch.
+Walk down when I pinch with three fingers.
+Walk down on an Index Pinch.
+Walk down on a thumb and index finger pinch.
+Walk down on a thumb and index pinch.
+Move left when I open my thumb.
+Move left when I release my thumb.
+Move left when I make a thumbs up.
+Go left when I open my thumb.
+Go left when I release my thumb.
+Go left when I make a thumbs up.
+Walk left when I open my thumb.
+Walk left when I release my thumb.
+Walk left when I make a thumbs up.
+Move right when I open my pinky.
+Move right when I release my pinky.
+Move right when I pinky is up.
+Go right when I open my pinky.
+Go right when I release my pinky.
+Go right when I pinky is up.
+Walk right when I open my pinky.
+Walk right when I release my pinky.
+Walk right when pinky is up.
+Walk right when my pinky is up.
+Move left when I open my thumb with my right hand.
+Move left when I release my thumb with my right hand.
+Move left when I make a thumbs up with my right hand.
+Go left when I open my thumb with my right hand.
+Go left when I release my thumb with my right hand.
+Go left when I make a thumbs up with my right hand.
+Walk left when I open my thumb with my right hand.
+Walk left when I release my thumb with my right hand.
+Walk left when I make a thumbs up with my right hand.
+Move right when I open my pinky with my right hand.
+Move right when I release my pinky with my right hand.
+Move right when I pinky is up with my right hand.
+Go right when I open my pinky with my right hand.
+Go right when I release my pinky with my right hand.
+Go right when I pinky is up with my right hand.
+Walk right when I open my pinky with my right hand.
+Walk right when I release my pinky with my right hand.
+Walk right when pinky is up with my right hand.
+Walk right when my pinky is up with my right hand.
+Move right when I open my thumb with my left hand.
+Move right when I release my thumb with my left hand.
+Move right when I make a thumbs up with my left hand.
+Go right when I open my thumb with my left hand.
+Go right when I release my thumb with my left hand.
+Go right when I make a thumbs up with my left hand.
+Walk right when I open my thumb with my left hand.
+Walk right when I release my thumb with left hand.
+Walk right when I make a thumbs up with left hand.
+Move left when I open my pinky with my left hand.
+Move left when I release my pinky with my left hand.
+Move left when I pinky is up with my left hand.
+Go left when I open my pinky with my left hand.
+Go left when I release my pinky with my left hand.
+Go left when I pinky is up with my left hand.
+Walk left when I open my pinky with my left hand.
+Walk left when I release my pinky with my left hand.
+Walk left when pinky is up with my left hand.
+Walk left when my pinky is up with my left hand.
+Control the mouse with my hand.
+Control the mouse with my left hand.
+Control the mouse with my right hand.
+Control the mouse with my wrist.
+Control the mouse with my right wrist.
+Control the mouse with my left wrist.
+Control the mouse with my elbow.
+Control the mouse with my right elbow.
+Control the mouse with my left elbow.
+Control the mouse with my nose.
